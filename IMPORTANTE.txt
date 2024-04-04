@@ -1,0 +1,2 @@
+no usar mayusculas ni caracteres especiales ni espacios ni numeros al principio de los nombres de archivos
+unicamente usar guion bajo para separara
