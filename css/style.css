@@ -231,7 +231,7 @@ body {
 }
 
 .index-card {
-    height: 40vh;
+    height: 23rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1449,7 +1449,6 @@ footer {
 
     .oferta .index-card {
         width: 90%;
-        height: 35vh;
         justify-content: center;
     }
 
