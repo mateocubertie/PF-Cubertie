@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .montserrat-normal {
     font-family: "Montserrat", sans-serif;
@@ -7,14 +6,7 @@
     font-weight: 300;
     font-style: normal;
 }
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-/*!--COLOR VIEJO: rgb(166, 0, 255) o BLUEVIOLET a veces*/
-/*!--UPDATE STORY Y TARJETAS INDEX: DE NEGRO A RAISIN BLACK #161925*/
 /*--RESET--*/
 
 * {
@@ -51,25 +43,23 @@ button {
     font-size: 14px;
 }
 
-.sboton:hover, .oboton:hover, .boton-oferta:hover, .boton-wsp:hover, .boton-contacto:hover, .gpboton:hover, .boton-producto:hover {
-    transform: scale(1.1);
-    background-color: #07a0C3;
-}
-
 h1 {
     color: white;
     font-style: italic;
     font-size: 60px;
     font-weight: 700;
-    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
-li, a, p, input {
+li, a, input {
     font-weight: 500;
+}
+p {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 300;
 }
 
 /*--HEADER--*/
@@ -128,7 +118,6 @@ body {
     color: white;
     font-size: 25px;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -137,7 +126,6 @@ body {
     color: white;
     font-size: 20px;
     font-weight: 500;
-    font-family: "Montserrat", sans-serif;
 }
 
 .hero-buttons {
@@ -180,7 +168,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat", sans-serif;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(3, 6, 18, 1) 0%, rgba(22, 25, 37, 1) 57%);
     color: rgb(22, 25, 37);
@@ -191,7 +178,7 @@ body {
     width: 87%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 40px 0px 40px 0px;
 }
@@ -239,7 +226,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: "Montserrat", sans-serif;
     color: white;
     background: rgba(22, 25, 37, 1);
 }
@@ -306,7 +292,6 @@ body {
 }
 
 .test {
-    font-family: "Montserrat", sans-serif;
     background-color: rgba(22, 25, 37, 1);
     background: linear-gradient(0deg, rgba(3, 6, 18, 1) 0%, rgba(22, 25, 37, 1) 57%);
     color: white;
@@ -556,7 +541,7 @@ body {
 .tarjeta-producto .precio {
     font-size: 30px;
     color: rgb(153, 254, 153);
-    text-shadow: -2px 0 3px black, 0 2px 3px black, 2px 0 3px black, 0 -2px 3px black;
+    text-shadow: -2px 0 5px black, 0 2px 5px black, 2px 0 5px black, 0 -2px 5px rgba(0,0,0,0.69);
 }
 
 .i1 {
@@ -612,7 +597,7 @@ body {
     height: 30px;
 }
 .faq {
-    background-color: #161925;
+    background-color: black;
     padding-bottom: 40px;
 }
 
@@ -624,18 +609,22 @@ body {
     font-style: italic;
 }
 .faq .accordion {
-    font-family: "Montserrat", sans-serif;
-    color: black;
+    font-family: "Helvetica", sans-serif;
+    color: white;
     font-weight: 500;
 }
+.faq .accordion .accordion-body {
+    color: white;
+}
 .faq .accordion .accordion-header button {
-    color: black;
+    color: white;
     font-weight: 700;
 }
 .faq .accordion-body ul li {
-    color: black;
+    color: white;
     font-weight: 500;
     padding: 5px 0 5px 0;
+    font-family: "Helvetica", sans-serif;
 }
 
 .box-contacto {
@@ -659,7 +648,228 @@ body {
     padding: 10px 30px 10px 30px;
     margin-top: 10px;
 }
+/*--ASESORIAS--*/
+.info-asesorias {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/asesorias.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.info-asesorias h2 {
+    font-size: 48px;
+}
+.info-asesorias h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.info-asesorias div{
+    height: 54rem;
+    width: 80rem;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 40px 0 40px;
+}
+.info-asesorias div div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.info-asesorias div div div {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.info-asesorias div div div button {
+    width: 20rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: #EF476F;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.567);
+    padding: 15px;
+    margin: 30px 0px 30px 0px;
+}
+.contenido-asesorias {
+    padding-top: 5rem;
+    height: 54rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(98,60,234);
+    background: linear-gradient(0deg, rgba(98,60,234,1) 75%, rgba(22,25,37,1) 100%);
+}
+.contenido-asesorias div {
+    height: 30%;
+    width: 60%;
+    padding: 20px 0 20px 0;
+    background-color: #161925;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 9px 10px 13px 0px rgba(0,0,0,0.69);
+-webkit-box-shadow: 9px 10px 13px 0px rgba(0,0,0,0.69);
+-moz-box-shadow: 9px 10px 13px 0px rgba(0,0,0,0.69);
+}
+.contenido-asesorias div div {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+.contenido-asesorias div div div {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.contenido-asesorias div div div div {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.contenido-asesorias div div div div h3 {
+    text-transform: uppercase;
+    font-style: italic;
+}
+.contenido-asesorias div div img {
+    width: 12rem;
+    height: 12rem;
+    padding: 20px;
+}
+.paquetes-asesorias {
+    height: 54rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(98,60,234);
+background: linear-gradient(180deg, rgba(98,60,234,1) 75%, rgba(22,25,37,1) 100%);
+}
+.paquetes-asesorias div {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.paquetes-asesorias div .tarjeta-asesoria {
+    width: 24rem;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #161925;
+    border-style: solid;
+    border-radius: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 15px 10px 15px;
+    margin: 10px 15px 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all ease 0.2s;
+}
+.paquetes-asesorias div .semestral {
+    background-color: goldenrod;
+}
+.semestral h4, .semestral ul li {
+    font-weight: 700;
+    text-shadow: -1px 0 10px rgba(0, 0, 0, 0.431), 0 1px 10px rgba(0, 0, 0, 0.431), 1px 0 10px rgba(0, 0, 0, 0.431), 0 -1px 10px rgba(0, 0, 0, 0.431);
+}
 
+.paquetes-asesorias div div ul {
+    text-align: left;
+}
+.paquetes-asesorias div div ul li {
+    padding-bottom: 1rem;
+}
+
+.paquetes-asesorias div div div {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.paquetes-asesorias div div div button {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.68);
+-webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.68);
+-moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.68);
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 5px 0px 5px 0px;
+}
+.paquetes-asesorias div div div h5 {
+    font-size: 30px;
+    color: rgb(153, 254, 153);
+    text-shadow: -2px 0 5px black, 0 2px 5px black, 2px 0 5px black, 0 -2px 5px rgba(0,0,0,0.69);
+} 
+
+.boton-compra1 {
+    background-color: #623CEA;
+}
+.boton-compra2 {
+    background-color: #623CEA;
+}
+.boton-compra3 {
+    background-color: #161925;
+}
+
+.dudas {
+    background-color: #161925;
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+}
+.dudas div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dudas div a {
+    width: 30%;
+}
+.dudas div a button {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    background-color: #EF476F;
+    font-weight: 600;
+    border-radius: 11px;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 5px 0px 5px 0px;
+    border-style: none;
+    width: 100%;
+    color: white;
+}
 /*--SOBRE EL ENTRENADOR--*/
 
 .historia {
@@ -1541,4 +1751,14 @@ footer {
     .secciones .secciones-1 li h6 {
         font-size: 12px;
     }
+}
+
+/*--PSEUDOCLASES GENERALES--*/
+button:not(.bsboton):hover {
+    transform: scale(1.1);
+    background-color: #07a0C3;
+}
+.tarjeta-asesoria:hover {
+    transform: scale(1.1);
+    background-color: #07a0C3;
 }
