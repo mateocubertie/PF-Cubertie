@@ -684,10 +684,6 @@ body {
     flex-direction: row;
     justify-content: center;
 }
-/*.info-asesorias div div div a {
-    width: auto;
-    height: auto;
-}*/
 .info-asesorias div div div button {
     width: 20rem;
     font-family: "Montserrat", sans-serif;
@@ -1038,6 +1034,18 @@ background: linear-gradient(180deg, rgba(98,60,234,1) 75%, rgba(22,25,37,1) 100%
     grid-area: dwsp;
     width: 85%;
     justify-self: center;
+}
+.datos-wsp a button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border-radius: 11px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 15px 0px 5px 0px;
+    border-style: none;
+    width: 100%;
+    background-color: green;
+    color: white;
 }
 .contacto-datos .datos-mail, .contacto-datos .datos-wsp {
     display: flex;
