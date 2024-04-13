@@ -684,6 +684,10 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+/*.info-asesorias div div div a {
+    width: auto;
+    height: auto;
+}*/
 .info-asesorias div div div button {
     width: 20rem;
     font-family: "Montserrat", sans-serif;
