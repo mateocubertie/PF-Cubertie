@@ -1449,6 +1449,7 @@ footer {
 
     .oferta .index-card {
         width: 90%;
+        height: 16rem;
         justify-content: center;
     }
 
