@@ -1,0 +1,1189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: normal; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a,
+label,
+li {
+  font-family: "Montserrat", sans-serif;
+  color: white; }
+
+h1 {
+  color: white;
+  font-style: italic;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; }
+
+li,
+a,
+input {
+  font-weight: 500; }
+
+p {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  color: white; }
+
+body header .cart-text {
+  display: none; }
+
+body {
+  background-color: black;
+  margin-top: 96px; }
+  body main .hero {
+    width: 100%;
+    height: auto;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/herobg.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 6px 5px 8px rgba(0, 0, 0, 0.87); }
+    body main .hero div {
+      width: 80%;
+      height: 91vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      body main .hero div .hero-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: auto;
+        height: auto; }
+      body main .hero div .hero-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: auto;
+        height: auto; }
+        body main .hero div .hero-copy h2 {
+          font-size: 25px;
+          color: white;
+          text-transform: uppercase;
+          margin-bottom: 20px; }
+        body main .hero div .hero-copy p {
+          font-size: 20px;
+          color: white;
+          font-weight: 500; }
+      body main .hero div .hero-buttons {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: auto;
+        height: auto; }
+        body main .hero div .hero-buttons a button {
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          background-color: #ef476f;
+          border-radius: 15px;
+          border: none;
+          padding: 15px;
+          margin: 5px 5px 5px 5px;
+          cursor: pointer;
+          transition: all ease 0.2s;
+          font-size: 14px; }
+          body main .hero div .hero-buttons a button:hover {
+            transform: scale(1.1);
+            background-color: #07a0c3; }
+        body main .hero div .hero-buttons a .sboton {
+          border: none;
+          color: white;
+          background-color: #623cea; }
+        body main .hero div .hero-buttons a .oboton {
+          background-color: black;
+          color: #623cea;
+          border-color: #623cea;
+          border-width: 2px;
+          border-style: solid; }
+    body main .hero img {
+      width: 100%;
+      height: 10vh; }
+  body main .story {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    background: linear-gradient(180deg, #030612 0%, #161925 57%);
+    color: #161925; }
+    body main .story div {
+      width: 87%;
+      height: 80vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 40px 0px 40px 0px; }
+      body main .story div .story-text {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        body main .story div .story-text h2 {
+          width: 100%;
+          height: auto;
+          font-size: 40px;
+          color: white;
+          text-transform: uppercase;
+          font-style: italic;
+          padding-bottom: 12px; }
+        body main .story div .story-text h3 {
+          width: 100%;
+          height: auto;
+          font-size: 25px;
+          color: #ef476f;
+          text-transform: uppercase;
+          padding-bottom: 12px; }
+        body main .story div .story-text p {
+          width: 400px;
+          height: auto;
+          font-size: 18px;
+          color: white;
+          font-weight: 500; }
+      body main .story div .story-video {
+        width: auto;
+        height: auto;
+        display: block;
+        padding: 0;
+        box-shadow: 30px 31px 44px 1px rgba(0, 0, 0, 0.83);
+        -webkit-box-shadow: 30px 31px 44px 1px rgba(0, 0, 0, 0.83);
+        -moz-box-shadow: 30px 31px 44px 1px rgba(0, 0, 0, 0.83); }
+  body main .oferta {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #161925; }
+    body main .oferta div {
+      width: 50%;
+      height: 23rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 70px; }
+      body main .oferta div .box-titulo {
+        width: auto;
+        height: auto;
+        padding: 0 10px 0 10px;
+        margin-bottom: 0; }
+        body main .oferta div .box-titulo h3 {
+          font-size: 25px;
+          color: white;
+          text-transform: uppercase;
+          font-style: italic;
+          text-align: center;
+          padding: 0px 10px 0px 10px; }
+      body main .oferta div .box-boton {
+        width: 90%;
+        height: 73%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        margin-bottom: 0; }
+        body main .oferta div .box-boton a button {
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          background-color: #ef476f;
+          border-radius: 15px;
+          border: none;
+          padding: 15px;
+          margin: 5px 5px 5px 5px;
+          cursor: pointer;
+          transition: all ease 0.2s;
+          font-size: 14px; }
+          body main .oferta div .box-boton a button:hover {
+            transform: scale(1.1);
+            background-color: #07a0c3; }
+      body main .oferta div .c1 {
+        background-image: url(../img/asesoria.png);
+        margin-bottom: 0; }
+      body main .oferta div .c2 {
+        background-image: url(../img/science2.jpg);
+        margin-bottom: 0; }
+  body main .testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161925;
+    background: linear-gradient(0deg, #030612 0%, #161925 57%);
+    color: white; }
+    body main .testimonios h2 {
+      width: 100%;
+      height: auto;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-style: italic;
+      text-align: center;
+      margin: 20px 0 20px 0; }
+    body main .testimonios div div div .clientes {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px; }
+      body main .testimonios div div div .clientes div {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 0 30px 0; }
+        body main .testimonios div div div .clientes div img {
+          width: 40%;
+          height: auto;
+          border-color: rgba(85, 85, 85, 0.65);
+          border-radius: 25%;
+          box-shadow: 5px 5px 3px rgba(108, 108, 108, 0.65); }
+        body main .testimonios div div div .clientes div div {
+          width: 50%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 10px 0px 10px 30px; }
+          body main .testimonios div div div .clientes div div h5 {
+            width: 100%;
+            font-size: 18px;
+            color: white;
+            text-transform: uppercase; }
+          body main .testimonios div div div .clientes div div h4 {
+            width: 100%;
+            font-size: 20px;
+            color: white;
+            text-transform: uppercase; }
+          body main .testimonios div div div .clientes div div p {
+            font-size: 16px;
+            color: white;
+            font-weight: 500;
+            font-style: italic;
+            margin-top: 10px; }
+  body main .gp-info {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 20px 0px; }
+    body main .gp-info h1 {
+      font-size: 45px;
+      color: white;
+      text-transform: uppercase;
+      font-style: italic;
+      margin: 40px 0px 40px 0px; }
+    body main .gp-info div {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0; }
+      body main .gp-info div .gp-info-guias {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-image: url(../img/guidebg.jpg); }
+        body main .gp-info div .gp-info-guias .gp-info-text1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center; }
+      body main .gp-info div .gp-info-planes {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url(../img/programbg.png); }
+        body main .gp-info div .gp-info-planes .gp-info-text2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center; }
+      body main .gp-info div div {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 100%; }
+        body main .gp-info div div div {
+          width: 400px;
+          height: 80%; }
+          body main .gp-info div div div div {
+            width: 320px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; }
+            body main .gp-info div div div div h2 {
+              font-size: 28px;
+              color: #ef476f;
+              text-transform: uppercase; }
+            body main .gp-info div div div div p {
+              font-size: 18px;
+              color: white;
+              margin-top: 20px; }
+            body main .gp-info div div div div a button {
+              font-size: 16px;
+              color: white;
+              font-weight: 600;
+              text-transform: uppercase;
+              font-family: "Montserrat", sans-serif;
+              background-color: #ef476f;
+              border-radius: 15px;
+              border: none;
+              padding: 15px;
+              margin: 5px 5px 5px 5px;
+              cursor: pointer;
+              transition: all ease 0.2s;
+              font-size: 14px;
+              background-color: #623cea;
+              padding: 15px 50px 15px 50px;
+              margin-top: 30px; }
+              body main .gp-info div div div div a button:hover {
+                transform: scale(1.1);
+                background-color: #07a0c3; }
+  body main .gp-productos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    body main .gp-productos div {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 40px; }
+      body main .gp-productos div h2 {
+        font-size: 40px;
+        color: white;
+        text-transform: uppercase;
+        font-style: italic;
+        margin: 40px 0px 40px 0px; }
+      body main .gp-productos div div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap; }
+        body main .gp-productos div div div {
+          width: auto;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          text-align: left; }
+          body main .gp-productos div div div h3 {
+            margin: 15px 40px 15px 40px; }
+          body main .gp-productos div div div div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; }
+            body main .gp-productos div div div div div {
+              width: 250px;
+              height: 400px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              align-items: center;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              border-style: solid;
+              border-radius: 40px;
+              padding: 10px 15px 10px 15px;
+              margin: 10px 15px 10px 15px;
+              text-align: center; }
+              body main .gp-productos div div div div div h4 {
+                font-size: 20px;
+                color: white;
+                text-transform: uppercase;
+                text-shadow: -2px 0 3px black, 0 2px 3px black, 2px 0 3px black, 0 -2px 3px black; }
+              body main .gp-productos div div div div div div {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                border: none;
+                border-radius: 0;
+                padding: 0;
+                margin: 0; }
+                body main .gp-productos div div div div div div h5 {
+                  font-size: 30px;
+                  color: #7af97a;
+                  text-transform: uppercase;
+                  text-shadow: -2px 0 5px black, 0 2px 5px black, 2px 0 5px black, 0 -2px 5px rgba(0, 0, 0, 0.69); }
+                body main .gp-productos div div div div div div button {
+                  font-size: 16px;
+                  color: white;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  font-family: "Montserrat", sans-serif;
+                  background-color: #ef476f;
+                  border-radius: 15px;
+                  border: none;
+                  padding: 15px;
+                  margin: 5px 5px 5px 5px;
+                  cursor: pointer;
+                  transition: all ease 0.2s;
+                  font-size: 14px;
+                  width: 70px;
+                  height: 50px;
+                  background-color: #623cea; }
+                  body main .gp-productos div div div div div div button:hover {
+                    transform: scale(1.1);
+                    background-color: #07a0c3; }
+                  body main .gp-productos div div div div div div button img {
+                    width: 30px;
+                    height: 30px; }
+            body main .gp-productos div div div div .i1 {
+              background-image: url(../img/tarjeta1.jpg); }
+            body main .gp-productos div div div div .i2 {
+              background-image: url(../img/tarjeta2.jpg); }
+            body main .gp-productos div div div div .i3 {
+              background-image: url(../img/tarjeta3.jpg); }
+            body main .gp-productos div div div div .i4 {
+              background-image: url(../img/tarjeta4.jpg); }
+            body main .gp-productos div div div div .i5 {
+              background-image: url(../img/tarjeta5.jpg); }
+            body main .gp-productos div div div div .i6 {
+              background-image: url(../img/tarjeta6.jpg); }
+            body main .gp-productos div div div div .i7 {
+              background-image: url(../img/tarjeta7.jpg); }
+  body main .faq {
+    background-color: black;
+    padding-bottom: 40px; }
+    body main .faq h2 {
+      font-size: 40px;
+      color: white;
+      text-transform: uppercase;
+      font-style: italic;
+      text-align: center;
+      padding: 40px 0 40px 0; }
+    body main .faq div div {
+      font-family: "Helvetica", sans-serif;
+      color: white;
+      font-weight: 500; }
+      body main .faq div div div {
+        border-color: black; }
+        body main .faq div div div h2 button {
+          color: white;
+          font-weight: 700; }
+        body main .faq div div div div div {
+          color: white; }
+          body main .faq div div div div div ul li {
+            color: white;
+            font-weight: 500;
+            font-family: "Helvetica", sans-serif;
+            padding: 5px 0 5px 0; }
+    body main .faq .box-contacto {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 40px; }
+      body main .faq .box-contacto h3 {
+        text-transform: uppercase; }
+      body main .faq .box-contacto a {
+        width: 20%;
+        height: auto; }
+        body main .faq .box-contacto a button {
+          width: 100%;
+          height: 100%;
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          background-color: #ef476f;
+          border-radius: 15px;
+          border: none;
+          padding: 15px;
+          margin: 5px 5px 5px 5px;
+          cursor: pointer;
+          transition: all ease 0.2s;
+          font-size: 14px; }
+          body main .faq .box-contacto a button:hover {
+            transform: scale(1.1);
+            background-color: #07a0c3; }
+  body main .info-asesorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/asesorias.jpg); }
+    body main .info-asesorias div {
+      width: 80rem;
+      height: 54rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 40px 0 40px; }
+      body main .info-asesorias div div {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0; }
+        body main .info-asesorias div div h1 {
+          font-size: 48px;
+          color: white; }
+        body main .info-asesorias div div h2 {
+          font-size: 22px;
+          color: white;
+          text-transform: uppercase; }
+        body main .info-asesorias div div div {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          body main .info-asesorias div div div a button {
+            width: 20rem;
+            height: auto;
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            background-color: #ef476f;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            margin: 5px 5px 5px 5px;
+            cursor: pointer;
+            transition: all ease 0.2s;
+            font-size: 14px;
+            margin-top: 30px; }
+            body main .info-asesorias div div div a button:hover {
+              transform: scale(1.1);
+              background-color: #07a0c3; }
+  body main .contenido-asesorias {
+    width: 100%;
+    height: 54rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5rem;
+    background: #623cea;
+    background: linear-gradient(0deg, #623cea 75%, #161925 100%); }
+    body main .contenido-asesorias div {
+      width: 60%;
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #161925;
+      border-radius: 10px;
+      box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+      -webkit-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+      -moz-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69); }
+      body main .contenido-asesorias div div {
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none; }
+        body main .contenido-asesorias div div img {
+          width: 12rem;
+          height: 12rem;
+          padding: 20px; }
+        body main .contenido-asesorias div div div {
+          width: 70%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center; }
+          body main .contenido-asesorias div div div div {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left; }
+            body main .contenido-asesorias div div div div h3 {
+              text-transform: uppercase;
+              font-style: italic; }
+  body main .paquetes-asesorias {
+    width: 100%;
+    height: 54rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background: #623cea;
+    background: linear-gradient(180deg, #623cea 75%, #161925 100%); }
+    body main .paquetes-asesorias div {
+      width: 80%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      body main .paquetes-asesorias div .tarjeta-asesoria {
+        transition: all ease 0.2s; }
+        body main .paquetes-asesorias div .tarjeta-asesoria:hover {
+          transform: scale(1.1); }
+      body main .paquetes-asesorias div div {
+        width: 24rem;
+        height: 36rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #161925;
+        border-style: solid;
+        border-color: rgba(22, 25, 37, 0.651);
+        border-radius: 40px;
+        padding: 10px 15px 10px 15px;
+        margin: 10px 15px 10px 15px;
+        text-transform: uppercase;
+        text-align: center;
+        /*@include background-img(center,cover,no-repeat)*/ }
+        body main .paquetes-asesorias div div ul {
+          text-align: left; }
+          body main .paquetes-asesorias div div ul li {
+            padding-bottom: 1rem; }
+        body main .paquetes-asesorias div div div {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          background-color: transparent;
+          border-style: none; }
+          body main .paquetes-asesorias div div div h5 {
+            font-size: 30px;
+            color: #7af97a;
+            text-shadow: -2px 0 5px black, 0 2px 5px black, 2px 0 5px black, 0 -2px 5px rgba(0, 0, 0, 0.69); }
+          body main .paquetes-asesorias div div div button {
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            background-color: #ef476f;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            margin: 5px 5px 5px 5px;
+            cursor: pointer;
+            transition: all ease 0.2s;
+            font-size: 14px; }
+            body main .paquetes-asesorias div div div button:hover {
+              transform: scale(1.1);
+              background-color: #07a0c3; }
+      body main .paquetes-asesorias div .semestral {
+        background-color: goldenrod;
+        font-weight: 700;
+        text-shadow: -1px 0 10px rgba(0, 0, 0, 0.431), 0 1px 10px rgba(0, 0, 0, 0.431), 1px 0 10px rgba(0, 0, 0, 0.431), 0 -1px 10px rgba(0, 0, 0, 0.431); }
+        body main .paquetes-asesorias div .semestral div button {
+          background-color: #161925; }
+  body main .dudas {
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #161925; }
+    body main .dudas div {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      body main .dudas div a {
+        width: 30%;
+        height: auto; }
+        body main .dudas div a button {
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          background-color: #ef476f;
+          border-radius: 15px;
+          border: none;
+          padding: 15px;
+          margin: 5px 5px 5px 5px;
+          cursor: pointer;
+          transition: all ease 0.2s;
+          font-size: 14px;
+          width: 100%;
+          height: auto;
+          background-color: #ef476f; }
+          body main .dudas div a button:hover {
+            transform: scale(1.1);
+            background-color: #07a0c3; }
+  body main .historia {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 91vh;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/storybg.jpg); }
+    body main .historia div {
+      width: 80%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      body main .historia div div {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 40%; }
+        body main .historia div div h2 {
+          font-size: 25px;
+          color: #ef476f;
+          text-transform: uppercase;
+          margin-bottom: 10px; }
+        body main .historia div div p {
+          font-weight: 500; }
+        body main .historia div div img {
+          display: none; }
+  body main .estudios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 91vh; }
+    body main .estudios div {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      body main .estudios div h2 {
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+        display: none;
+        margin-bottom: 15px; }
+      body main .estudios div img {
+        width: 40%;
+        height: auto; }
+      body main .estudios div div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        body main .estudios div div h2 {
+          display: block; }
+        body main .estudios div div ul {
+          list-style: disc; }
+          body main .estudios div div ul li {
+            font-weight: 500;
+            margin: 12px 10px 12px 10px; }
+  body main .grid-container-contacto {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto repeat(5, 14vh);
+    grid-template-areas: "header header header" "datos form form" "datos form form" "datos form form" "datos form form" "datos form form";
+    background-color: black;
+    background: linear-gradient(0deg, black 0%, #161925 16%, #161925 84%, black 100%);
+    align-items: center;
+    padding: 5vh 0 5vh 0; }
+    body main .grid-container-contacto .contacto-header {
+      grid-area: header;
+      justify-self: center;
+      padding: 0 15px 30px 15px; }
+    body main .grid-container-contacto .contacto-datos {
+      grid-area: datos;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: subgrid;
+      grid-template-areas: "dheader" "dmail" "dmail" "dwsp" "dwsp";
+      align-items: center;
+      justify-content: center; }
+      body main .grid-container-contacto .contacto-datos div {
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        body main .grid-container-contacto .contacto-datos div img {
+          width: 150px;
+          height: 150px; }
+      body main .grid-container-contacto .contacto-datos .datos-header {
+        grid-area: dheader; }
+      body main .grid-container-contacto .contacto-datos .datos-mail {
+        grid-area: dmail; }
+      body main .grid-container-contacto .contacto-datos .datos-wsp {
+        grid-area: dwsp; }
+        body main .grid-container-contacto .contacto-datos .datos-wsp button {
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          background-color: #ef476f;
+          border-radius: 15px;
+          border: none;
+          padding: 15px;
+          margin: 5px 5px 5px 5px;
+          cursor: pointer;
+          transition: all ease 0.2s;
+          font-size: 14px;
+          background-color: green;
+          padding: 10px;
+          margin: 15px 0px 5px 0px; }
+          body main .grid-container-contacto .contacto-datos .datos-wsp button:hover {
+            transform: scale(1.1);
+            background-color: #07a0c3; }
+  body main form {
+    width: 100%;
+    height: auto;
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: subgrid;
+    grid-template-areas: "fheader fheader" "fnombre ftexto" "fmail ftexto" "freset ftexto" "fenviar ftexto";
+    align-items: center; }
+    body main form div label {
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      margin-bottom: 10px; }
+    body main form div input {
+      width: 100%;
+      height: auto;
+      font-size: 18px;
+      color: white;
+      font-weight: 400;
+      border-radius: 8px;
+      border-style: none;
+      font-family: "Roboto", sans-serif;
+      padding: 10px 10px 10px 10px; }
+    body main form .form-header {
+      grid-area: fheader;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      justify-self: flex-start; }
+    body main form .form-nombre {
+      grid-area: fnombre;
+      width: 85%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      justify-self: center; }
+      body main form .form-nombre input {
+        color: black; }
+    body main form .form-mail {
+      grid-area: fmail;
+      width: 85%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      justify-self: center; }
+      body main form .form-mail input {
+        color: black; }
+    body main form .form-consulta {
+      grid-area: ftexto;
+      width: 85%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      justify-self: center; }
+      body main form .form-consulta textarea {
+        width: 100%;
+        height: 90%;
+        font-size: 18px;
+        color: white;
+        font-weight: 400;
+        border-radius: 11px;
+        font-family: "Roboto", sans-serif;
+        padding: 10px 10px 10px 10px;
+        color: black; }
+    body main form .form-reset {
+      grid-area: freset;
+      width: 85%;
+      height: auto;
+      justify-self: center;
+      align-self: flex-end; }
+      body main form .form-reset input {
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        background-color: #ef476f;
+        border-radius: 15px;
+        border: none;
+        padding: 15px;
+        margin: 5px 5px 5px 5px;
+        cursor: pointer;
+        transition: all ease 0.2s;
+        font-size: 14px;
+        background-color: #623cea; }
+        body main form .form-reset input:hover {
+          transform: scale(1.1);
+          background-color: #07a0c3; }
+    body main form .form-enviar {
+      grid-area: fenviar;
+      width: 85%;
+      height: auto;
+      justify-self: center;
+      align-self: flex-start; }
+      body main form .form-enviar input {
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        background-color: #ef476f;
+        border-radius: 15px;
+        border: none;
+        padding: 15px;
+        margin: 5px 5px 5px 5px;
+        cursor: pointer;
+        transition: all ease 0.2s;
+        font-size: 14px;
+        background-color: #ef476f; }
+        body main form .form-enviar input:hover {
+          transform: scale(1.1);
+          background-color: #07a0c3; }
+
+footer {
+  width: 100%;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: black; }
+  footer div {
+    display: grid;
+    grid-template-columns: auto 700px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo intlinks-footer redes" "logo intlinks-footer redes"; }
+    footer div .logo-footer {
+      grid-area: logo;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+      footer div .logo-footer img {
+        width: 150px;
+        height: 150px; }
+    footer div .intlinks-footer {
+      width: auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      grid-area: intlinks-footer;
+      margin: 0px 30px 0px 30px; }
+      footer div .intlinks-footer .secciones {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: none; }
+        footer div .intlinks-footer .secciones div {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start; }
+          footer div .intlinks-footer .secciones div ul {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            list-style: none;
+            padding: 20px 20px 20px 20px;
+            margin-bottom: 0; }
+            footer div .intlinks-footer .secciones div ul li {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start; }
+              footer div .intlinks-footer .secciones div ul li h5 {
+                font-size: 18px;
+                color: white; }
+              footer div .intlinks-footer .secciones div ul li ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                list-style: none;
+                padding: 0; }
+                footer div .intlinks-footer .secciones div ul li ul li {
+                  background-color: transparent; }
+                  footer div .intlinks-footer .secciones div ul li ul li a {
+                    color: white;
+                    text-decoration: none; }
+                    footer div .intlinks-footer .secciones div ul li ul li a h6 {
+                      font-size: 14px;
+                      color: white;
+                      margin-bottom: 0; }
+      footer div .intlinks-footer .politicas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: none; }
+        footer div .intlinks-footer .politicas h6 {
+          font-size: 15px;
+          color: white;
+          text-decoration: underline;
+          padding: 20px 10px 20px 10px;
+          margin-bottom: 0; }
+    footer div .redes {
+      grid-area: redes;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 20px 0px 0px 0px; }
+      footer div .redes div {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        footer div .redes div h5 {
+          font-size: 18px;
+          color: white;
+          margin: 0px 0px 10px 0px; }
+        footer div .redes div div {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center; }
+          footer div .redes div div div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center; }
+            footer div .redes div div div a img {
+              width: 50px;
+              height: 50px;
+              margin: 7px; }

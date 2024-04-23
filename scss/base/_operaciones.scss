@@ -1,0 +1,97 @@
+//! VARIABLES
+$color-bg: rgb(0, 0, 0);
+$color-primario: rgb(22, 25, 37);
+$color-secundario: rgb(98, 60, 234);
+$color-botprimario: rgb(98, 60, 234);
+$color-botsecundario: rgb(239, 71, 111);
+$color-bothover: rgb(7, 160, 195);
+$color-texto: rgb(255, 255, 255);
+$color-texto-input: rgb(0, 0, 0);
+$color-resaltado: rgb(239, 71, 111);
+$color-precio: rgb(122, 249, 122);
+$color-premium: rgb(218, 165, 32);
+
+//! MIXINS
+@mixin flex($direction, $justify, $align, $wrap: def) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+    @if ($wrap !=def) {
+        flex-wrap: $wrap;
+    }
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin text($size: def, $color: def, $weight: def, $transform: def, $style: def) {
+    @if ($size !=def) {
+        font-size: $size;
+    }
+
+    @if ($color !=def) {
+        color: $color;
+    }
+
+    @if ($weight !=def) {
+        font-weight: $weight;
+    }
+
+    @if ($transform !=def) {
+        text-transform: $transform;
+    }
+
+    @if ($style !=def) {
+        font-style: $style;
+    }
+}
+
+@mixin background-img($position, $size, $repeat, $url: def, $clip: def) {
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+
+    @if ($url !=def) {
+        background-image: $url;
+    }
+
+    @if ($clip !=def) {
+        background-clip: $clip;
+    }
+}
+
+@mixin button-contenedor($shadow: true) {
+    @include text(16px, $color-texto, 600, uppercase);
+    font-family: "Montserrat", sans-serif;
+    background-color: $color-botsecundario;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    margin: 5px 5px 5px 5px;
+    @if shadow == true {
+        box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+        -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+    }
+
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-size: 14px;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: $color-bothover;
+    }
+
+
+}
+
+@mixin box-shadow() {
+    box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./base/operaciones";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a,
+label,
+li {
+    font-family: "Montserrat", sans-serif;
+    color: $color-texto;
+}
+
+h1 {
+    color: $color-texto;
+    font-style: italic;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+li,
+a,
+input {
+    font-weight: 500;
+}
+
+p {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 300;
+    color: $color-texto;
+}
+
