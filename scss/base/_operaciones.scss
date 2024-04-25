@@ -1,5 +1,5 @@
 //! VARIABLES
-$color-bg: rgb(0, 0, 0);
+$color-bg: rgb(5, 5, 5);
 $color-primario: rgb(22, 25, 37);
 $color-secundario: rgb(98, 60, 234);
 $color-botprimario: rgb(98, 60, 234);
@@ -72,7 +72,7 @@ $color-premium: rgb(218, 165, 32);
     border: none;
     padding: 15px;
     margin: 5px 5px 5px 5px;
-    @if shadow == true {
+    @if ($shadow == true) {
         box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
         -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
         -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);

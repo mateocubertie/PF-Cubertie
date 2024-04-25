@@ -47,11 +47,14 @@ p {
   font-weight: 300;
   color: white; }
 
-body header .cart-text {
+header nav div div ul li .cart-img {
+  display: block; }
+
+header nav div div ul li .cart-text {
   display: none; }
 
 body {
-  background-color: black;
+  background-color: #050505;
   margin-top: 96px; }
   body main .hero {
     width: 100%;
@@ -114,6 +117,9 @@ body {
           border: none;
           padding: 15px;
           margin: 5px 5px 5px 5px;
+          box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
           cursor: pointer;
           transition: all ease 0.2s;
           font-size: 14px; }
@@ -125,7 +131,7 @@ body {
           color: white;
           background-color: #623cea; }
         body main .hero div .hero-buttons a .oboton {
-          background-color: black;
+          background-color: #050505;
           color: #623cea;
           border-color: #623cea;
           border-width: 2px;
@@ -140,7 +146,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: #050505;
     background: linear-gradient(180deg, #030612 0%, #161925 57%);
     color: #161925; }
     body main .story div {
@@ -150,7 +156,6 @@ body {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      flex-wrap: wrap;
       padding: 40px 0px 40px 0px; }
       body main .story div .story-text {
         width: auto;
@@ -241,6 +246,9 @@ body {
           border: none;
           padding: 15px;
           margin: 5px 5px 5px 5px;
+          box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
           cursor: pointer;
           transition: all ease 0.2s;
           font-size: 14px; }
@@ -319,102 +327,120 @@ body {
             margin-top: 10px; }
   body main .gp-info {
     width: 100%;
-    height: 90vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    margin: 0px 0px 20px 0px; }
-    body main .gp-info h1 {
-      font-size: 45px;
-      color: white;
-      text-transform: uppercase;
-      font-style: italic;
-      margin: 40px 0px 40px 0px; }
+    /*h1 {
+                @include text(45px, $color-texto, def, uppercase, italic);
+                margin: 40px 0px 40px 0px;
+            }*/ }
     body main .gp-info div {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       width: 100%;
-      height: 80%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 0; }
-      body main .gp-info div .gp-info-guias {
+      height: 50%; }
+      body main .gp-info div div {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        background-image: url(../img/guidebg.jpg); }
-        body main .gp-info div .gp-info-guias .gp-info-text1 {
+        width: 80%;
+        height: 100%;
+        border-radius: 30px; }
+        body main .gp-info div div div {
+          width: 40%;
+          height: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: flex-start;
+          justify-content: center;
           align-items: center; }
-      body main .gp-info div .gp-info-planes {
+          body main .gp-info div div div h2 {
+            width: 100%;
+            height: auto;
+            font-size: 50px;
+            color: #ef476f;
+            text-transform: uppercase;
+            font-style: italic;
+            margin-top: 30px; }
+          body main .gp-info div div div h3 {
+            width: 100%;
+            height: auto;
+            font-size: 25px;
+            color: white;
+            text-transform: uppercase; }
+          body main .gp-info div div div p {
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            color: white;
+            font-weight: 500;
+            margin-top: 20px; }
+          body main .gp-info div div div a button {
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            background-color: #ef476f;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            margin: 5px 5px 5px 5px;
+            box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            cursor: pointer;
+            transition: all ease 0.2s;
+            font-size: 14px;
+            background-color: #623cea;
+            padding: 15px 50px 15px 50px;
+            margin-top: 20px;
+            margin-bottom: 30px; }
+            body main .gp-info div div div a button:hover {
+              transform: scale(1.1);
+              background-color: #07a0c3; }
+    body main .gp-info .gp-info-guias {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/guias.jpg);
+      background-position: right;
+      text-align: left; }
+      body main .gp-info .gp-info-guias .gp-info-text1 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
-        background-image: url(../img/programbg.png); }
-        body main .gp-info div .gp-info-planes .gp-info-text2 {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-items: center; }
-      body main .gp-info div div {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 50%;
-        height: 100%; }
-        body main .gp-info div div div {
-          width: 400px;
-          height: 80%; }
-          body main .gp-info div div div div {
-            width: 320px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center; }
-            body main .gp-info div div div div h2 {
-              font-size: 28px;
-              color: #ef476f;
-              text-transform: uppercase; }
-            body main .gp-info div div div div p {
-              font-size: 18px;
-              color: white;
-              margin-top: 20px; }
-            body main .gp-info div div div div a button {
-              font-size: 16px;
-              color: white;
-              font-weight: 600;
-              text-transform: uppercase;
-              font-family: "Montserrat", sans-serif;
-              background-color: #ef476f;
-              border-radius: 15px;
-              border: none;
-              padding: 15px;
-              margin: 5px 5px 5px 5px;
-              cursor: pointer;
-              transition: all ease 0.2s;
-              font-size: 14px;
-              background-color: #623cea;
-              padding: 15px 50px 15px 50px;
-              margin-top: 30px; }
-              body main .gp-info div div div div a button:hover {
-                transform: scale(1.1);
-                background-color: #07a0c3; }
+        align-items: center; }
+    body main .gp-info .gp-info-planes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/planes.jpg);
+      background-position: left;
+      text-align: right; }
+      body main .gp-info .gp-info-planes .gp-info-text2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center; }
   body main .gp-productos {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    background: #050505;
+    background: linear-gradient(180deg, #030612 0%, #161925 57%);
+    color: #161925;
+    padding-top: 40px; }
     body main .gp-productos div {
-      width: 100%;
+      width: 80%;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -441,7 +467,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          align-items: center;
+          align-items: flex-start;
           flex-wrap: wrap;
           text-align: left; }
           body main .gp-productos div div div h3 {
@@ -462,17 +488,26 @@ body {
               background-position: center;
               background-size: cover;
               background-repeat: no-repeat;
-              border-style: solid;
+              box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.61);
+              -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.61);
+              -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.61);
+              border-style: none;
               border-radius: 40px;
               padding: 10px 15px 10px 15px;
               margin: 10px 15px 10px 15px;
-              text-align: center; }
+              text-align: center;
+              transition: all ease 0.2s; }
+              body main .gp-productos div div div div div:hover {
+                transform: scale(1.1); }
               body main .gp-productos div div div div div h4 {
                 font-size: 20px;
                 color: white;
                 text-transform: uppercase;
                 text-shadow: -2px 0 3px black, 0 2px 3px black, 2px 0 3px black, 0 -2px 3px black; }
               body main .gp-productos div div div div div div {
+                box-shadow: none;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
                 width: 100%;
                 height: auto;
                 display: flex;
@@ -483,6 +518,8 @@ body {
                 border-radius: 0;
                 padding: 0;
                 margin: 0; }
+                body main .gp-productos div div div div div div:hover {
+                  transform: none; }
                 body main .gp-productos div div div div div div h5 {
                   font-size: 30px;
                   color: #7af97a;
@@ -499,6 +536,9 @@ body {
                   border: none;
                   padding: 15px;
                   margin: 5px 5px 5px 5px;
+                  box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+                  -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+                  -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
                   cursor: pointer;
                   transition: all ease 0.2s;
                   font-size: 14px;
@@ -526,8 +566,12 @@ body {
             body main .gp-productos div div div div .i7 {
               background-image: url(../img/tarjeta7.jpg); }
   body main .faq {
-    background-color: black;
+    background: #050505;
+    background: linear-gradient(184deg, #0a0a0a 0%, #070707 8%, #050505 100%);
     padding-bottom: 40px; }
+    body main .faq img {
+      width: 100%;
+      height: 10vh; }
     body main .faq h2 {
       font-size: 40px;
       color: white;
@@ -540,7 +584,7 @@ body {
       color: white;
       font-weight: 500; }
       body main .faq div div div {
-        border-color: black; }
+        border-color: #050505; }
         body main .faq div div div h2 button {
           color: white;
           font-weight: 700; }
@@ -577,6 +621,9 @@ body {
           border: none;
           padding: 15px;
           margin: 5px 5px 5px 5px;
+          box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
           cursor: pointer;
           transition: all ease 0.2s;
           font-size: 14px; }
@@ -609,12 +656,17 @@ body {
         align-items: center;
         margin: 0; }
         body main .info-asesorias div div h1 {
-          font-size: 48px;
+          font-size: 50px;
           color: white; }
         body main .info-asesorias div div h2 {
-          font-size: 22px;
+          font-size: 25px;
           color: white;
           text-transform: uppercase; }
+        body main .info-asesorias div div p {
+          font-size: 20px;
+          color: white;
+          font-weight: 500;
+          margin-top: 20px; }
         body main .info-asesorias div div div {
           width: 100%;
           height: auto;
@@ -714,6 +766,9 @@ body {
       justify-content: space-around;
       align-items: center; }
       body main .paquetes-asesorias div .tarjeta-asesoria {
+        box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+        -webkit-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+        -moz-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
         transition: all ease 0.2s; }
         body main .paquetes-asesorias div .tarjeta-asesoria:hover {
           transform: scale(1.1); }
@@ -806,7 +861,7 @@ body {
           transition: all ease 0.2s;
           font-size: 14px;
           width: 100%;
-          height: auto;
+          height: 80px;
           background-color: #ef476f; }
           body main .dudas div a button:hover {
             transform: scale(1.1);
@@ -815,17 +870,17 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    min-height: 91vh;
+    min-height: 100vh;
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/storybg.jpg); }
     body main .historia div {
       width: 80%;
-      height: auto;
+      height: 90vh;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -836,7 +891,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         max-width: 40%; }
         body main .historia div div h2 {
           font-size: 25px;
@@ -847,6 +902,9 @@ body {
           font-weight: 500; }
         body main .historia div div img {
           display: none; }
+    body main .historia img {
+      width: 100%;
+      height: 10vh; }
   body main .estudios {
     width: 100%;
     height: auto;
@@ -854,7 +912,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 91vh; }
+    min-height: 91vh;
+    background: #030612;
+    background: linear-gradient(180deg, #030612 0%, #161925 20%, #161925 100%);
+    padding: 40px 0 40px 0; }
     body main .estudios div {
       width: 80%;
       height: 100%;
@@ -892,7 +953,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto repeat(5, 14vh);
     grid-template-areas: "header header header" "datos form form" "datos form form" "datos form form" "datos form form" "datos form form";
-    background-color: black;
+    background-color: #050505;
     background: linear-gradient(0deg, black 0%, #161925 16%, #161925 84%, black 100%);
     align-items: center;
     padding: 5vh 0 5vh 0; }
@@ -935,6 +996,9 @@ body {
           border: none;
           padding: 15px;
           margin: 5px 5px 5px 5px;
+          box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+          -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
           cursor: pointer;
           transition: all ease 0.2s;
           font-size: 14px;
@@ -1032,6 +1096,9 @@ body {
         border: none;
         padding: 15px;
         margin: 5px 5px 5px 5px;
+        box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+        -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
         cursor: pointer;
         transition: all ease 0.2s;
         font-size: 14px;
@@ -1056,6 +1123,9 @@ body {
         border: none;
         padding: 15px;
         margin: 5px 5px 5px 5px;
+        box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+        -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
         cursor: pointer;
         transition: all ease 0.2s;
         font-size: 14px;
@@ -1069,7 +1139,7 @@ footer {
   height: auto;
   font-family: "Montserrat", sans-serif;
   color: white;
-  background-color: black; }
+  background-color: #050505; }
   footer div {
     display: grid;
     grid-template-columns: auto 700px auto;
@@ -1187,3 +1257,306 @@ footer {
               width: 50px;
               height: 50px;
               margin: 7px; }
+
+@media screen and (max-width: 992px) {
+  header nav div div ul li .cart-img {
+    display: none; }
+  header nav div div ul li .cart-text {
+    display: block; } }
+
+body main {
+  /*Hero*/
+  /*Story*/
+  /*Offer*/
+  /*Testimonios*/
+  /*Historia*/
+  /*Estudios*/ }
+  @media screen and (max-width: 1357px) {
+    body main .hero div .hero-header h1 {
+      font-size: 48px; }
+    body main .hero div .hero-copy h2 {
+      font-size: 22px; }
+    body main .hero div .hero-copy p {
+      font-size: 17px; } }
+  @media screen and (max-width: 915px) {
+    body main .hero {
+      background-image: url(../img/herobg-v.jpg);
+      background-position: top 0 right 50%;
+      height: auto; }
+      body main .hero div {
+        height: 80vh;
+        justify-content: flex-end;
+        padding: 0 0 5vh 0; }
+        body main .hero div .hero-header h1 {
+          font-size: 30px; }
+        body main .hero div .hero-copy h2 {
+          font-size: 18px; }
+        body main .hero div .hero-copy p {
+          font-size: 15px; }
+        body main .hero div .hero-buttons .sboton,
+        body main .hero div .hero-buttons .oboton {
+          padding: 10px 6px 10px 6px;
+          border-radius: 10px;
+          font-size: 11px; } }
+  @media screen and (max-width: 608px) {
+    body main .hero div .hero-header h1 {
+      font-size: 23px; }
+    body main .hero div .hero-copy h2 {
+      font-size: 13px; }
+    body main .hero div .hero-copy p {
+      font-size: 11px; } }
+  @media screen and (max-width: 710px) {
+    body main .hero div {
+      padding: 0 0 2vh 0; } }
+  @media screen and (max-width: 710px) {
+    body main .hero div {
+      height: auto;
+      padding: 20px 0px 20px 0px; } }
+  @media screen and (max-width: 1512px) {
+    body main .story div .story-video iframe {
+      width: 550px;
+      height: 337.5px; } }
+  @media screen and (max-width: 1249px) {
+    body main .story div .story-text h2 {
+      font-size: 30px; }
+    body main .story div .story-text h3 {
+      font-size: 20px; }
+    body main .story div .story-text p {
+      font-size: 15px; }
+    body main .story div .story-video iframe {
+      width: 450px;
+      height: 253.125px; } }
+  @media screen and (max-width: 1010px) {
+    body main .story div {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: center; }
+      body main .story div .story-text {
+        padding: 0 20px 80px 20px; } }
+  @media screen and (max-width: 480px) {
+    body main .story div .story-text {
+      padding: 0 20px 50px 20px; }
+      body main .story div .story-text h2 {
+        font-size: 26px; }
+      body main .story div .story-text h3 {
+        font-size: 18px; }
+      body main .story div .story-text p {
+        width: auto;
+        font-size: 15px; }
+    body main .story div .story-video iframe {
+      width: 300px;
+      height: 168.75px; } }
+  @media screen and (max-width: 874px) {
+    body main .oferta div .box-titulo h3 {
+      font-size: 21px; } }
+  @media screen and (max-width: 874px) {
+    body main .oferta {
+      flex-direction: column;
+      align-items: center; }
+      body main .oferta div {
+        width: 90%;
+        height: 16rem;
+        justify-content: center; }
+        body main .oferta div .box-titulo {
+          padding: 20px 0 20px 0; } }
+  @media screen and (max-width: 433px) {
+    body main .oferta div .box-titulo h3 {
+      font-size: 17px; }
+    body main .oferta div .box-boton a button {
+      padding: 11px;
+      font-size: 14px; } }
+  @media screen and (max-width: 1380px) {
+    body main .testimonios div div div .clientes div div h4 {
+      margin-bottom: 3px; }
+    body main .testimonios div div div .clientes div div h5 {
+      margin-bottom: 3px; }
+    body main .testimonios div div div .clientes div div p {
+      margin: 3px 0 3px 0; } }
+  @media screen and (max-width: 1244px) {
+    body main .testimonios div div div .clientes div div {
+      margin-left: 14px; }
+      body main .testimonios div div div .clientes div div h4 {
+        font-size: 18px;
+        margin: 0; }
+      body main .testimonios div div div .clientes div div h5 {
+        font-size: 16px;
+        margin: 0; }
+      body main .testimonios div div div .clientes div div p {
+        font-size: 14px;
+        margin: 0; } }
+  @media screen and (max-width: 1000px) {
+    body main .testimonios h2 {
+      font-size: 30px; }
+    body main .testimonios div div div .clientes div {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 40%; }
+      body main .testimonios div div div .clientes div div {
+        width: 90%; }
+      body main .testimonios div div div .clientes div img {
+        height: 230px;
+        width: 230px; } }
+  @media screen and (max-width: 650px) {
+    body main .testimonios {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body main .testimonios div div div .clientes div {
+        width: 70%;
+        text-align: center; }
+        body main .testimonios div div div .clientes div div {
+          width: 100%; } }
+  @media screen and (max-width: 433px) {
+    body main .testimonios h2 {
+      font-size: 30px; }
+    body main .testimonios div div div .clientes div div h4 {
+      font-size: 18px; }
+    body main .testimonios div div div .clientes div div h5 {
+      font-size: 15px; }
+    body main .testimonios div div div .clientes div div p {
+      font-size: 14px; } }
+  @media screen and (max-width: 1156px) {
+    body main .historia div div {
+      width: 30%; }
+      body main .historia div div h1 {
+        font-size: 40px; }
+      body main .historia div div h2 {
+        font-size: 22px; }
+      body main .historia div div p {
+        font-size: 14px; } }
+  @media screen and (max-width: 1000px) {
+    body main .historia {
+      background-image: none; }
+      body main .historia div {
+        justify-content: center; }
+        body main .historia div div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          max-width: none; }
+          body main .historia div div h1 {
+            margin-top: 30px; }
+          body main .historia div div p {
+            margin-bottom: 30px; }
+          body main .historia div div img {
+            display: block;
+            width: 100%;
+            height: auto; } }
+  @media screen and (max-width: 375px) {
+    body main .historia div div h1 {
+      font-size: 32px; }
+    body main .historia div div h2 {
+      font-size: 18px; }
+    body main .historia div div p {
+      font-size: 12px; } }
+  @media screen and (max-width: 1156px) {
+    body main .estudios div div ul li {
+      font-size: 14px; } }
+  @media screen and (max-width: 880px) {
+    body main .estudios div {
+      flex-direction: column; }
+      body main .estudios div h2 {
+        display: block;
+        margin-bottom: 20px; }
+      body main .estudios div img {
+        width: 80%; }
+      body main .estudios div div {
+        width: 100%; }
+        body main .estudios div div h2 {
+          display: none; } }
+  @media screen and (max-width: 375px) {
+    body main .estudios div div ul li {
+      font-size: 12px; } }
+
+/*Info*/
+/*Contenidos*/
+/*Paquetes*/
+/*Preguntas*/
+/*Info*/
+/*Productos*/
+/*Dudas*/
+/*Contacto*/
+@media screen and (max-width: 1000px) {
+  footer div {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo" "redes" "intlinks-footer"; }
+    footer div .logo-footer {
+      justify-content: center; }
+    footer div .intlinks-footer {
+      width: 100%;
+      margin: 0;
+      padding: 0 30px 0 30px; }
+      footer div .intlinks-footer .secciones div ul {
+        padding-right: 5px;
+        padding-left: 5px; }
+    footer div .redes {
+      justify-content: center; }
+      footer div .redes div div {
+        flex-direction: row; } }
+
+@media screen and (max-width: 570px) {
+  footer div .intlinks-footer {
+    display: flex;
+    padding: 0 15px 0 15px; }
+    footer div .intlinks-footer .secciones {
+      width: 100%; }
+      footer div .intlinks-footer .secciones div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: auto auto;
+        grid-template-areas: "about productos" "ayuda ayuda";
+        justify-content: flex-start;
+        align-items: flex-start; }
+        footer div .intlinks-footer .secciones div ul {
+          padding: 10px 5px 10px 5px; }
+        footer div .intlinks-footer .secciones div .secciones-about {
+          grid-area: about; }
+        footer div .intlinks-footer .secciones div .secciones-productos {
+          grid-area: productos; }
+        footer div .intlinks-footer .secciones div .secciones-ayuda {
+          grid-area: ayuda; }
+    footer div .intlinks-footer .politicas {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto;
+      grid-template-areas: "copy cookies" "seguridad seguridad";
+      justify-content: flex-start;
+      align-items: flex-start; }
+      footer div .intlinks-footer .politicas h6 {
+        padding: 10px 5px 10px 5px; }
+      footer div .intlinks-footer .politicas .politicas-copy {
+        grid-area: copy; }
+      footer div .intlinks-footer .politicas .politicas-cookies {
+        grid-area: cookies; }
+      footer div .intlinks-footer .politicas .politicas-seguridad {
+        grid-area: seguridad; }
+  footer div .redes {
+    margin-top: 10px; } }
+
+@media screen and (max-width: 385px) {
+  footer div .logo-footer img {
+    width: 100px;
+    height: 100px; }
+  footer div .intlinks-footer .secciones div ul li h5 {
+    font-size: 14px; }
+  footer div .intlinks-footer .secciones div ul li ul li h6 {
+    font-size: 12px; }
+  footer div .intlinks-footer .politicas h6 {
+    font-size: 12px; }
+  footer div .redes div h5 {
+    font-size: 14px; }
+  footer div .redes div div div a img {
+    width: 38px;
+    height: 38px; } }

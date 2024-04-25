@@ -1,8 +1,18 @@
-
-body {
-    header {
-        .cart-text {
-            display: none;
+header {
+    nav {
+        div {
+            div {
+                ul {
+                    li {
+                        .cart-img {
+                            display: block;
+                        }
+                        .cart-text {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }

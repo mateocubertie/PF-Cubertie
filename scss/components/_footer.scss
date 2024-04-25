@@ -95,7 +95,7 @@ footer {
             margin: 20px 0px 0px 0px;
             div {
                 margin: 0;
-                @include flex(column,center,center);
+                @include flex(column, center, center);
                 h5 {
                     @include text(18px,$color-texto);
                     margin: 0px 0px 10px 0px;

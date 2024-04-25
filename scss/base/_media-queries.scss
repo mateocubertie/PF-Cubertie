@@ -1,0 +1,713 @@
+//!HEADER
+header {
+    nav {
+        div {
+            div {
+                ul {
+                    li {
+                        @media screen and (max-width:992px) {
+                            .cart-img {
+                                display: none;
+                            }
+
+                            .cart-text {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//!INDEX
+
+body {
+    main {
+
+        /*Hero*/
+        @media screen and (max-width:1357px) {
+            .hero {
+                div {
+                    .hero-header {
+                        h1 {
+                            font-size: 48px;
+                        }
+                    }
+
+                    .hero-copy {
+                        h2 {
+                            font-size: 22px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:915px) {
+            .hero {
+                background-image: url(../img/herobg-v.jpg);
+                background-position: top 0 right 50%;
+                height: auto;
+
+                div {
+                    height: 80vh;
+                    justify-content: flex-end;
+                    padding: 0 0 5vh 0;
+
+                    .hero-header {
+                        h1 {
+                            font-size: 30px;
+                        }
+                    }
+
+                    .hero-copy {
+                        h2 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .hero-buttons {
+
+                        .sboton,
+                        .oboton {
+                            padding: 10px 6px 10px 6px;
+                            border-radius: 10px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 608px) {
+            .hero {
+                div {
+                    .hero-header {
+                        h1 {
+                            font-size: 23px;
+                        }
+                    }
+
+                    .hero-copy {
+                        h2 {
+                            font-size: 13px;
+                        }
+
+                        p {
+                            font-size: 11px;
+                        }
+                    }
+
+                    .hero-buttons {}
+                }
+            }
+        }
+
+        @media screen and (max-width: 710px) {
+            .hero {
+                div {
+                    padding: 0 0 2vh 0;
+                }
+            }
+        }
+
+        @media screen and (max-width: 710px) {
+            .hero {
+                div {
+                    height: auto;
+                    padding: 20px 0px 20px 0px;
+                }
+            }
+        }
+
+        /*Story*/
+        .story {
+            @media screen and (max-width: 1512px) {
+                div {
+                    .story-video {
+                        iframe {
+                            @include size(550px, 337.5px);
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1249px) {
+                div {
+                    .story-text {
+                        h2 {
+                            font-size: 30px;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .story-video {
+                        iframe {
+                            @include size(450px, 253.125px);
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1010px) {
+                div {
+                    @include size(auto, auto);
+                    @include flex(column, space-evenly, center, center);
+
+                    .story-text {
+                        padding: 0 20px 80px 20px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                div {
+                    .story-text {
+                        padding: 0 20px 50px 20px;
+
+                        h2 {
+                            font-size: 26px;
+                        }
+
+                        h3 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            width: auto;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .story-video {
+                        iframe {
+                            width: 300px;
+                            height: 168.75px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Offer*/
+        .oferta {
+            @media screen and (max-width:874px) {
+                div {
+                    .box-titulo {
+                        h3 {
+                            font-size: 21px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width:874px) {
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    @include size(90%, 16rem);
+                    justify-content: center;
+
+                    .box-titulo {
+                        padding: 20px 0 20px 0;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 433px) {
+                div {
+                    .box-titulo {
+                        h3 {
+                            font-size: 17px;
+                        }
+                    }
+
+                    .box-boton {
+                        a {
+                            button {
+                                padding: 11px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Testimonios*/
+        .testimonios {
+            @media screen and (max-width: 1380px) {
+                div {
+                    div {
+                        div {
+                            .clientes {
+                                div {
+                                    div {
+                                        h4 {
+                                            margin-bottom: 3px;
+                                        }
+
+                                        h5 {
+                                            margin-bottom: 3px;
+                                        }
+
+                                        p {
+                                            margin: 3px 0 3px 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1244px) {
+                div {
+                    div {
+                        div {
+                            .clientes {
+                                div {
+                                    div {
+                                        margin-left: 14px;
+
+                                        h4 {
+                                            font-size: 18px;
+                                            margin: 0;
+                                        }
+
+                                        h5 {
+                                            font-size: 16px;
+                                            margin: 0;
+                                        }
+
+                                        p {
+                                            font-size: 14px;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1000px) {
+                h2 {
+                    font-size: 30px;
+                }
+
+                div {
+                    div {
+                        div {
+                            .clientes {
+                                div {
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    width: 40%;
+
+                                    div {
+                                        width: 90%;
+
+                                    }
+
+                                    img {
+                                        height: 230px;
+                                        width: 230px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 650px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    div {
+                        div {
+                            .clientes {
+                                div {
+                                    width: 70%;
+                                    text-align: center;
+
+                                    div {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 433px) {
+                h2 {
+                    font-size: 30px;
+                }
+
+                div {
+                    div {
+                        div {
+                            .clientes {
+                                div {
+                                    div {
+                                        h4 {
+                                            font-size: 18px;
+                                        }
+
+                                        h5 {
+                                            font-size: 15px;
+                                        }
+
+                                        p {
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //!ABOUT
+        /*Historia*/
+        .historia {
+            @media screen and (max-width: 1156px) {
+                div {
+                    div {
+                        width: 30%;
+
+                        h1 {
+                            font-size: 40px;
+                        }
+
+                        h2 {
+                            font-size: 22px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1000px) {
+                background-image: none;
+
+                div {
+                    justify-content: center;
+
+                    div {
+                        @include size(100%, 100%);
+                        @include flex(column, flex-start, center);
+                        text-align: center;
+                        max-width: none;
+
+                        h1 {
+                            margin-top: 30px;
+                        }
+
+
+                        p {
+                            margin-bottom: 30px;
+                        }
+
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width:375px) {
+                div {
+                    div {
+                        
+                        h1 {
+                            font-size: 32px;
+                        }
+
+                        h2 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Estudios*/
+        .estudios {
+            @media screen and (max-width: 1156px) {
+                div {
+                    div {
+                        ul {
+                            li {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 880px) {
+                div {
+                    flex-direction: column;
+
+                    h2 {
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+
+                    img {
+                        width: 80%;
+                    }
+
+                    div {
+                        width: 100%;
+
+                        h2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 375px) {
+                div {
+                    div {
+                        ul {
+                            li {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//!ASESORIAS
+/*Info*/
+/*Contenidos*/
+/*Paquetes*/
+/*Preguntas*/
+//!PLANES
+/*Info*/
+/*Productos*/
+/*Dudas*/
+//!CONTACTO
+/*Contacto*/
+//!FOOTER
+footer {
+    @media screen and (max-width: 1000px) {
+        div {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "logo"
+                "redes"
+                "intlinks-footer"
+            ;
+
+            .logo-footer {
+                justify-content: center;
+            }
+
+            .intlinks-footer {
+                width: 100%;
+                margin: 0;
+                padding: 0 30px 0 30px;
+
+                .secciones {
+                    div {
+                        ul {
+                            padding-right: 5px;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            .redes {
+                justify-content: center;
+
+                div {
+                    div {
+                        flex-direction: row;
+                    }
+
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        div {
+            .intlinks-footer {
+                display: flex;
+                padding: 0 15px 0 15px;
+
+                .secciones {
+                    width: 100%;
+
+                    div {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 35% 65%;
+                        grid-template-rows: auto auto;
+                        grid-template-areas:
+                            "about productos"
+                            "ayuda ayuda"
+                        ;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        ul {
+                            padding: 10px 5px 10px 5px;
+                        }
+
+                        .secciones-about {
+                            grid-area: about;
+                        }
+
+                        .secciones-productos {
+                            grid-area: productos;
+                        }
+
+                        .secciones-ayuda {
+                            grid-area: ayuda;
+                        }
+                    }
+                }
+
+                .politicas {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: auto auto;
+                    grid-template-areas:
+                        "copy cookies"
+                        "seguridad seguridad"
+                    ;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    h6 {
+                        padding: 10px 5px 10px 5px;
+                    }
+
+                    .politicas-copy {
+                        grid-area: copy;
+                    }
+
+                    .politicas-cookies {
+                        grid-area: cookies;
+                    }
+
+                    .politicas-seguridad {
+                        grid-area: seguridad;
+                    }
+                }
+            }
+
+            .redes {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 385px) {
+        div {
+            .logo-footer {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            .intlinks-footer {
+                .secciones {
+                    div {
+                        ul {
+                            li {
+                                h5 {
+                                    font-size: 14px;
+                                }
+
+                                ul {
+                                    li {
+                                        h6 {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .politicas {
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .redes {
+                div {
+                    h5 {
+                        font-size: 14px;
+                    }
+
+                    div {
+                        div {
+                            a {
+                                img {
+                                    width: 38px;
+                                    height: 38px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
