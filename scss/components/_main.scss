@@ -241,7 +241,7 @@ body {
                     border-radius: 30px;
 
                     div {
-                        @include size(40%, 100%);
+                        @include size(45%, 100%);
                         @include flex(column, center, center);
 
                         h2 {
@@ -279,7 +279,7 @@ body {
             .gp-info-guias {
                 @include flex(row, center, center);
                 background-image: url(../img/guias.jpg);
-                background-position: right;
+                background-position: left;
                 text-align: left;
 
                 .gp-info-text1 {
@@ -290,7 +290,7 @@ body {
             .gp-info-planes {
                 @include flex(row, center, center);
                 background-image: url(../img/planes.jpg);
-                background-position: left;
+                background-position: right;
                 text-align: right;
 
                 .gp-info-text2 {
@@ -308,7 +308,7 @@ body {
             padding-top: 40px;
 
             div {
-                @include size(80%, auto);
+                @include size(85%, auto);
                 @include flex(column, flex-start, center);
                 margin-bottom: 40px;
 
@@ -323,7 +323,7 @@ body {
 
                     div {
                         @include size(auto, auto);
-                        @include flex(column, flex-start, flex-start, wrap);
+                        @include flex(column, flex-start, center, wrap);
                         text-align: left;
 
                         h3 {
@@ -332,6 +332,7 @@ body {
 
                         div {
                             @include flex(row, space-around, center, wrap);
+                            margin: 0 20px 0 20px;
 
                             div {
                                 @include size(250px, 400px);
@@ -380,7 +381,7 @@ body {
                                         @include button-contenedor();
                                         @include size(70px, 50px);
                                         background-color: $color-botprimario;
-
+                                        @include flex(row,center,center);
                                         img {
                                             @include size(30px, 30px);
                                         }

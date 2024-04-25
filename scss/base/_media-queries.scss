@@ -454,7 +454,7 @@ body {
             @media screen and (max-width:375px) {
                 div {
                     div {
-                        
+
                         h1 {
                             font-size: 32px;
                         }
@@ -520,6 +520,244 @@ body {
                 }
             }
         }
+
+        //!PLANES
+        /*Info*/
+        .gp-info {
+            @media screen and (max-width: 1120px) {
+                .gp-info-guias {
+                    background-position: center;
+                }
+
+                .gp-info-planes {
+                    background-position: center;
+                }
+
+                div {
+                    div {
+                        div {
+                            h2 {
+                                font-size: 38px
+                            }
+
+                            h3 {
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+
+                            a {
+                                button {
+                                    margin: 5px 10px 5px 10px;
+                                    padding: 10px 38px 10px 38px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 865px) {
+                .gp-info-guias {
+                    background-position: right;
+
+                    .gp-info-text1 {
+                        @include flex(row, center, center);
+                        @include size(100%, 100%);
+                        border-radius: 0;
+                        background: rgb(22, 25, 37);
+                        background: linear-gradient(100deg, rgba(22, 25, 37, 1) 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, rgba(22, 25, 37, 1) 100%);
+                    }
+                }
+
+                .gp-info-planes {
+                    background-position: left;
+
+                    .gp-info-text2 {
+                        @include flex(row, center, center);
+                        @include size(100%, 100%);
+                        border-radius: 0;
+                        background: rgb(22, 25, 37);
+                        background: linear-gradient(100deg, rgba(22, 25, 37, 1) 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, rgba(22, 25, 37, 1) 100%);
+                    }
+                }
+
+                div {
+                    div {
+                        div {
+                            @include size(80%, auto);
+                            text-align: center;
+
+                            h2 {
+                                font-size: 30px;
+                            }
+
+                            h3 {
+                                font-size: 18px;
+                            }
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Productos*/
+        .gp-productos {
+            @media screen and (max-width: 740px) {
+                div {
+                    @include size(95%, auto);
+                    margin-bottom: 20px;
+
+                    h2 {
+                        font-size: 30px;
+                        text-align: center;
+                        margin: 15px 0 15px 0;
+                    }
+
+                    div {
+                        margin-bottom: 20px;
+
+                        div {
+                            h3 {
+                                font-size: 24px;
+                            }
+
+                            div {
+                                margin: 0px;
+
+                                div {
+                                    @include size(170px, 272px);
+                                    padding: 10px 5px 10px 5px;
+
+                                    h4 {
+                                        font-size: 16px;
+                                    }
+
+                                    div {
+                                        h5 {
+                                            font-size: 16px;
+                                        }
+
+                                        button {
+                                            @include size(60px, 45px);
+
+                                            img {
+                                                @include size(26px, 26px)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 430px) {
+                div {
+
+                    h2 {
+                        font-size: 28px;
+                        text-align: center;
+
+                    }
+
+                    div {
+
+                        div {
+                            h3 {
+                                font-size: 20px;
+                            }
+
+                            div {
+                                margin: 0px;
+
+                                div {
+                                    @include size(140px, 224px);
+
+                                    h4 {
+                                        font-size: 14px;
+                                    }
+
+                                    div {
+                                        h5 {
+                                            font-size: 14px;
+                                        }
+
+                                        button {
+                                            @include size(50px, 40px);
+
+                                            img {
+                                                @include size(22px, 22px)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 359px) {
+                div {
+                    div {
+                        div {
+                            div {
+                                div {
+                                    @include size(120px, 192px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 00px) {
+                div {
+                    h2 {}
+
+                    div {
+                        div {
+                            h3 {}
+
+                            div {
+                                div {
+                                    h4 {}
+
+                                    div {
+                                        h5 {}
+
+                                        button {
+                                            img {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Dudas*/
+        .faq {
+            @media screen and (max-width:850px) {
+                .box-contacto {
+                    a {
+                        @include size(170px, 60px);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -528,10 +766,10 @@ body {
 /*Contenidos*/
 /*Paquetes*/
 /*Preguntas*/
-//!PLANES
-/*Info*/
-/*Productos*/
-/*Dudas*/
+
+
+
+
 //!CONTACTO
 /*Contacto*/
 //!FOOTER
