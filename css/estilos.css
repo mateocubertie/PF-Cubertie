@@ -1487,6 +1487,9 @@ body main {
       font-size: 18px; }
     body main .historia div div p {
       font-size: 12px; } }
+  @media screen and (max-height: 780px) {
+    body main .historia {
+      height: 780px; } }
   @media screen and (max-width: 1156px) {
     body main .estudios div div ul li {
       font-size: 14px; } }

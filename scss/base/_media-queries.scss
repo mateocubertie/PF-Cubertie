@@ -467,6 +467,9 @@ body {
                     }
                 }
             }
+            @media screen and (max-height: 780px) {
+                height: 780px;
+            }
         }
 
         /*Estudios*/
