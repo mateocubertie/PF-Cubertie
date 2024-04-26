@@ -52,48 +52,50 @@
         </nav>
     </header>
     <main>
-        <div class="grid-container-contacto">
-            <div class="contacto-header">
-                <h1>Contacto</h1>
+        <section class="contacto">
+            <div class="grid-container-contacto">
+                <div class="contacto-header">
+                    <h1>Contacto</h1>
+                </div>
+                <div class="contacto-datos">
+                    <div class="datos-header">
+                        <h2>Datos de contacto</h2>
+                    </div>
+                    <div class="datos-mail">
+                        <img src="../img/gmail.png" alt="Logo de Gmail">
+                        <p>nombredelentrenador@gmail.com</p>
+                    </div>
+                    <div class="datos-wsp">
+                        <img src="../img/whatsapp.png" alt="Logo de whatsapp">
+                        <a href="https://www.whatsapp.com" target="_blank"><button type="button" class="boton-wsp">Hablame por
+                                WhatsApp</button></a>
+                    </div>
+                </div>
+                <form action="" class="contacto-form">
+                    <div class="form-header">
+                        <h2>Enviame tu consulta</h2>
+                    </div>
+                    <div class="form-nombre">
+                            <label for="name">Nombre y apellido:</label>
+                            <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-mail">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="text" name="correo" id="correo">
+                    </div>
+                    <div class="form-consulta">
+                        <label for="consultabox">Tu consulta o comentario:</label>
+                        <textarea name="consultabox" id="consultabox" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-reset">
+                            <input type="reset" value="Reiniciar datos">
+                    </div>
+                    <div class="form-enviar">
+                            <input type="submit" value="Enviar">
+                    </div>
+                </form>
             </div>
-            <div class="contacto-datos">
-                <div class="datos-header">
-                    <h2>Datos de contacto</h2>
-                </div>
-                <div class="datos-mail">
-                    <img src="../img/gmail.png" alt="Logo de Gmail">
-                    <p>nombredelentrenador@gmail.com</p>
-                </div>
-                <div class="datos-wsp">
-                    <img src="../img/whatsapp.png" alt="Logo de whatsapp">
-                    <a href="https://www.whatsapp.com" target="_blank"><button type="button" class="boton-wsp">Hablame por
-                            WhatsApp</button></a>
-                </div>
-            </div>
-            <form action="" class="contacto-form">
-                <div class="form-header">
-                    <h2>Enviame tu consulta</h2>
-                </div>
-                <div class="form-nombre">
-                        <label for="name">Nombre y apellido:</label>
-                        <input type="text" name="name" id="name">
-                </div>
-                <div class="form-mail">
-                        <label for="correo">Correo electrónico:</label>
-                        <input type="text" name="correo" id="correo">
-                </div>
-                <div class="form-consulta">
-                    <label for="consultabox">Tu consulta o comentario:</label>
-                    <textarea name="consultabox" id="consultabox" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form-reset">
-                        <input type="reset" value="Reiniciar datos">
-                </div>
-                <div class="form-enviar">
-                        <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </div>
+        </section>
     </main>
     <footer id="redes">
         <div class="footer-grid-container">

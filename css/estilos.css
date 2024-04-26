@@ -953,193 +953,207 @@ body {
           body main .estudios div div ul li {
             font-weight: 500;
             margin: 12px 10px 12px 10px; }
-  body main .grid-container-contacto {
+  body main .contacto {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto repeat(5, 14vh);
-    grid-template-areas: "header header header" "datos form form" "datos form form" "datos form form" "datos form form" "datos form form";
-    background-color: #050505;
-    background: linear-gradient(0deg, black 0%, #161925 16%, #161925 84%, black 100%);
-    align-items: center;
-    padding: 5vh 0 5vh 0; }
-    body main .grid-container-contacto .contacto-header {
-      grid-area: header;
-      justify-self: center;
-      padding: 0 15px 30px 15px; }
-    body main .grid-container-contacto .contacto-datos {
-      grid-area: datos;
+    height: auto; }
+    body main .contacto .grid-container-contacto {
+      width: 100%;
+      height: 100%;
       display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: subgrid;
-      grid-template-areas: "dheader" "dmail" "dmail" "dwsp" "dwsp";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto repeat(5, 125px);
+      grid-template-areas: "header header header" "datos form form" "datos form form" "datos form form" "datos form form" "datos form form";
+      background-color: #050505;
+      background: linear-gradient(0deg, black 0%, #161925 16%, #161925 84%, black 100%);
       align-items: center;
-      justify-content: center; }
-      body main .grid-container-contacto .contacto-datos div {
-        width: 85%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        body main .grid-container-contacto .contacto-datos div img {
-          width: 150px;
-          height: 150px; }
-      body main .grid-container-contacto .contacto-datos .datos-header {
-        grid-area: dheader; }
-      body main .grid-container-contacto .contacto-datos .datos-mail {
-        grid-area: dmail; }
-      body main .grid-container-contacto .contacto-datos .datos-wsp {
-        grid-area: dwsp; }
-        body main .grid-container-contacto .contacto-datos .datos-wsp button {
-          font-size: 16px;
-          color: white;
-          font-weight: 600;
-          text-transform: uppercase;
-          font-family: "Montserrat", sans-serif;
-          background-color: #ef476f;
-          border-radius: 15px;
-          border: none;
-          padding: 15px;
-          margin: 5px 5px 5px 5px;
-          box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-          -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-          -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-          cursor: pointer;
-          transition: all ease 0.2s;
-          font-size: 14px;
-          background-color: green;
-          padding: 10px;
-          margin: 15px 0px 5px 0px; }
-          body main .grid-container-contacto .contacto-datos .datos-wsp button:hover {
-            transform: scale(1.1);
-            background-color: #07a0c3; }
-  body main form {
-    width: 100%;
-    height: auto;
-    grid-area: form;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: subgrid;
-    grid-template-areas: "fheader fheader" "fnombre ftexto" "fmail ftexto" "freset ftexto" "fenviar ftexto";
-    align-items: center; }
-    body main form div label {
-      font-size: 18px;
-      color: white;
-      font-weight: 500;
-      margin-bottom: 10px; }
-    body main form div input {
-      width: 100%;
-      height: auto;
-      font-size: 18px;
-      color: white;
-      font-weight: 400;
-      border-radius: 8px;
-      border-style: none;
-      font-family: "Roboto", sans-serif;
-      padding: 10px 10px 10px 10px; }
-    body main form .form-header {
-      grid-area: fheader;
-      width: 100%;
-      height: auto;
-      text-align: center;
-      justify-self: flex-start; }
-    body main form .form-nombre {
-      grid-area: fnombre;
-      width: 85%;
-      height: 90%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      justify-self: center; }
-      body main form .form-nombre input {
-        color: black; }
-    body main form .form-mail {
-      grid-area: fmail;
-      width: 85%;
-      height: 90%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      justify-self: center; }
-      body main form .form-mail input {
-        color: black; }
-    body main form .form-consulta {
-      grid-area: ftexto;
-      width: 85%;
-      height: 90%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      justify-self: center; }
-      body main form .form-consulta textarea {
+      padding: 5vh 0 5vh 0; }
+      body main .contacto .grid-container-contacto .contacto-header {
+        grid-area: header;
+        justify-self: center;
+        padding: 0 15px 30px 15px; }
+      body main .contacto .grid-container-contacto .contacto-datos {
+        text-align: center;
+        grid-area: datos;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: subgrid;
+        grid-template-areas: "dheader" "dmail" "dmail" "dwsp" "dwsp";
+        justify-items: center; }
+        body main .contacto .grid-container-contacto .contacto-datos div {
+          width: 85%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          body main .contacto .grid-container-contacto .contacto-datos div img {
+            width: 150px;
+            height: 150px; }
+        body main .contacto .grid-container-contacto .contacto-datos .datos-header {
+          grid-area: dheader;
+          text-transform: uppercase; }
+        body main .contacto .grid-container-contacto .contacto-datos .datos-mail {
+          grid-area: dmail; }
+        body main .contacto .grid-container-contacto .contacto-datos .datos-wsp {
+          grid-area: dwsp; }
+          body main .contacto .grid-container-contacto .contacto-datos .datos-wsp button {
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            background-color: #ef476f;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            margin: 5px 5px 5px 5px;
+            box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            cursor: pointer;
+            transition: all ease 0.2s;
+            font-size: 14px;
+            background-color: green;
+            padding: 10px;
+            margin: 15px 0px 5px 0px; }
+            body main .contacto .grid-container-contacto .contacto-datos .datos-wsp button:hover {
+              transform: scale(1.1);
+              background-color: #07a0c3; }
+      body main .contacto .grid-container-contacto form {
         width: 100%;
-        height: 90%;
-        font-size: 18px;
-        color: white;
-        font-weight: 400;
-        border-radius: 11px;
-        font-family: "Roboto", sans-serif;
-        padding: 10px 10px 10px 10px;
-        color: black; }
-    body main form .form-reset {
-      grid-area: freset;
-      width: 85%;
-      height: auto;
-      justify-self: center;
-      align-self: flex-end; }
-      body main form .form-reset input {
-        font-size: 16px;
-        color: white;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        background-color: #ef476f;
-        border-radius: 15px;
-        border: none;
-        padding: 15px;
-        margin: 5px 5px 5px 5px;
-        box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-        -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-        -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-        cursor: pointer;
-        transition: all ease 0.2s;
-        font-size: 14px;
-        background-color: #623cea; }
-        body main form .form-reset input:hover {
-          transform: scale(1.1);
-          background-color: #07a0c3; }
-    body main form .form-enviar {
-      grid-area: fenviar;
-      width: 85%;
-      height: auto;
-      justify-self: center;
-      align-self: flex-start; }
-      body main form .form-enviar input {
-        font-size: 16px;
-        color: white;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        background-color: #ef476f;
-        border-radius: 15px;
-        border: none;
-        padding: 15px;
-        margin: 5px 5px 5px 5px;
-        box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-        -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-        -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
-        cursor: pointer;
-        transition: all ease 0.2s;
-        font-size: 14px;
-        background-color: #ef476f; }
-        body main form .form-enviar input:hover {
-          transform: scale(1.1);
-          background-color: #07a0c3; }
+        height: auto;
+        grid-area: form;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: subgrid;
+        grid-template-areas: "fheader fheader" "fnombre ftexto" "fmail ftexto" "freset ftexto" "fenviar ftexto";
+        align-items: center;
+        justify-items: center; }
+        body main .contacto .grid-container-contacto form div label {
+          font-size: 18px;
+          color: white;
+          font-weight: 500;
+          margin-bottom: 10px; }
+        body main .contacto .grid-container-contacto form div input {
+          width: 100%;
+          height: auto;
+          font-size: 18px;
+          color: white;
+          font-weight: 400;
+          border-radius: 8px;
+          border-style: none;
+          font-family: "Roboto", sans-serif;
+          padding: 10px 10px 10px 10px; }
+        body main .contacto .grid-container-contacto form .form-header {
+          grid-area: fheader;
+          width: 100%;
+          height: auto;
+          text-transform: uppercase;
+          text-align: center;
+          justify-self: flex-start; }
+        body main .contacto .grid-container-contacto form .form-nombre {
+          grid-area: fnombre;
+          width: 85%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          justify-self: center; }
+          body main .contacto .grid-container-contacto form .form-nombre input {
+            color: black; }
+        body main .contacto .grid-container-contacto form .form-mail {
+          grid-area: fmail;
+          width: 85%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          justify-self: center; }
+          body main .contacto .grid-container-contacto form .form-mail input {
+            color: black; }
+        body main .contacto .grid-container-contacto form .form-consulta {
+          grid-area: ftexto;
+          width: 85%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          justify-self: center; }
+          body main .contacto .grid-container-contacto form .form-consulta textarea {
+            width: 100%;
+            height: 90%;
+            font-size: 18px;
+            color: white;
+            font-weight: 400;
+            border-radius: 11px;
+            font-family: "Roboto", sans-serif;
+            padding: 10px 10px 10px 10px;
+            color: black; }
+        body main .contacto .grid-container-contacto form .form-reset {
+          grid-area: freset;
+          width: 85%;
+          height: auto;
+          justify-self: center;
+          align-self: flex-end; }
+          body main .contacto .grid-container-contacto form .form-reset input {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            background-color: #ef476f;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            margin: 5px 5px 5px 5px;
+            box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            cursor: pointer;
+            transition: all ease 0.2s;
+            font-size: 14px;
+            background-color: #623cea; }
+            body main .contacto .grid-container-contacto form .form-reset input:hover {
+              transform: scale(1.1);
+              background-color: #07a0c3; }
+        body main .contacto .grid-container-contacto form .form-enviar {
+          grid-area: fenviar;
+          width: 85%;
+          height: auto;
+          justify-self: center;
+          align-self: flex-start; }
+          body main .contacto .grid-container-contacto form .form-enviar input {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            background-color: #ef476f;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            margin: 5px 5px 5px 5px;
+            box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
+            cursor: pointer;
+            transition: all ease 0.2s;
+            font-size: 14px;
+            background-color: #ef476f; }
+            body main .contacto .grid-container-contacto form .form-enviar input:hover {
+              transform: scale(1.1);
+              background-color: #07a0c3; }
 
 footer {
   width: 100%;
@@ -1284,7 +1298,8 @@ body main {
   /*Info*/
   /*Contenidos*/
   /*Paquetes*/
-  /*Preguntas*/ }
+  /*Preguntas*/
+  /*Contacto*/ }
   @media screen and (max-width: 1357px) {
     body main .hero div .hero-header h1 {
       font-size: 48px; }
@@ -1762,8 +1777,71 @@ body main {
     body main .dudas div a {
       width: 239px;
       height: 80px; } }
+  @media screen and (max-width: 970px) {
+    body main .contacto .grid-container-contacto .contacto-header h1 {
+      font-size: 48px; }
+    body main .contacto .grid-container-contacto .contacto-datos div img {
+      width: 120px;
+      height: 120px; }
+    body main .contacto .grid-container-contacto .contacto-datos .datos-header h2 {
+      font-size: 24px; }
+    body main .contacto .grid-container-contacto form div label {
+      font-size: 16px; }
+    body main .contacto .grid-container-contacto form div input {
+      font-size: 16px; }
+    body main .contacto .grid-container-contacto form .form-header h2 {
+      font-size: 24px; }
+    body main .contacto .grid-container-contacto form .form-consulta textarea {
+      font-size: 16px; } }
+  @media screen and (max-width: 750px) {
+    body main .contacto .grid-container-contacto {
+      padding: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 85vh);
+      grid-template-areas: "datos" "form"; }
+      body main .contacto .grid-container-contacto .contacto-header {
+        display: none; }
+      body main .contacto .grid-container-contacto .contacto-datos {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 20%);
+        grid-template-areas: "dheader" "dmail" "dmail" "dwsp" "dwsp"; }
+        body main .contacto .grid-container-contacto .contacto-datos div img {
+          width: 170px;
+          height: 170px; }
+        body main .contacto .grid-container-contacto .contacto-datos .datos-wsp a button {
+          margin-top: 22px;
+          font-size: 16px;
+          border-radius: 10px; }
+      body main .contacto .grid-container-contacto form {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 16.6666%);
+        grid-template-areas: "fheader fheader" "fnombre fnombre" "fmail fmail" "ftexto ftexto" "ftexto ftexto" "freset fenviar"; }
+        body main .contacto .grid-container-contacto form .form-reset,
+        body main .contacto .grid-container-contacto form .form-enviar {
+          align-self: center; } }
+  @media screen and (max-height: 685px) {
+    body main .contacto .grid-container-contacto {
+      padding: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 580px);
+      grid-template-areas: "datos" "form"; }
+      body main .contacto .grid-container-contacto .contacto-datos {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 20%);
+        grid-template-areas: "dheader" "dmail" "dmail" "dwsp" "dwsp"; }
+      body main .contacto .grid-container-contacto form {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 16.6666%);
+        grid-template-areas: "fheader fheader" "fnombre fnombre" "fmail fmail" "ftexto ftexto" "ftexto ftexto" "freset fenviar"; } }
 
-/*Contacto*/
 @media screen and (max-width: 1000px) {
   footer div {
     grid-template-columns: 1fr;

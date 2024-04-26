@@ -381,7 +381,8 @@ body {
                                         @include button-contenedor();
                                         @include size(70px, 50px);
                                         background-color: $color-botprimario;
-                                        @include flex(row,center,center);
+                                        @include flex(row, center, center);
+
                                         img {
                                             @include size(30px, 30px);
                                         }
@@ -665,7 +666,7 @@ body {
             @include background-img(right, cover, no-repeat, url(../img/storybg.jpg));
 
             div {
-                @include size(80%,90vh);
+                @include size(80%, 90vh);
                 @include flex(row, flex-start, center);
 
                 div {
@@ -687,8 +688,9 @@ body {
                     }
                 }
             }
+
             img {
-                @include size(100%,10vh);
+                @include size(100%, 10vh);
             }
         }
 
@@ -696,9 +698,10 @@ body {
             @include size(100%, auto);
             @include flex(row, center, center);
             min-height: 91vh;
-            background: rgb(3,6,18);
-background: linear-gradient(180deg, rgba(3,6,18,1) 0%, rgba(22,25,37,1) 20%, rgba(22,25,37,1) 100%);
+            background: rgb(3, 6, 18);
+            background: linear-gradient(180deg, rgba(3, 6, 18, 1) 0%, rgba(22, 25, 37, 1) 20%, rgba(22, 25, 37, 1) 100%);
             padding: 40px 0 40px 0;
+
             div {
                 @include size(80%, 100%);
                 @include flex(row, space-between, center);
@@ -734,175 +737,187 @@ background: linear-gradient(180deg, rgba(3,6,18,1) 0%, rgba(22,25,37,1) 20%, rgb
         }
 
         // CONTACTO
-        .grid-container-contacto {
-            @include size(100%, 100%);
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto repeat(5, 14vh);
-            grid-template-areas:
-                "header header header"
-                "datos form form"
-                "datos form form"
-                "datos form form"
-                "datos form form"
-                "datos form form"
-            ;
-            background-color: $color-bg;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(22, 25, 37, 1) 16%, rgba(22, 25, 37, 1) 84%, rgba(0, 0, 0, 1) 100%);
-            align-items: center;
-            padding: 5vh 0 5vh 0;
-
-            .contacto-header {
-                grid-area: header;
-                justify-self: center;
-                padding: 0 15px 30px 15px;
-            }
-
-            .contacto-datos {
-                grid-area: datos;
+        .contacto {
+            @include size(100%,auto);
+            .grid-container-contacto {
+                @include size(100%, 100%);
                 display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: subgrid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto repeat(5, 125px);
                 grid-template-areas:
-                    "dheader"
-                    "dmail"
-                    "dmail"
-                    "dwsp"
-                    "dwsp"
+                    "header header header"
+                    "datos form form"
+                    "datos form form"
+                    "datos form form"
+                    "datos form form"
+                    "datos form form"
                 ;
+                background-color: $color-bg;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(22, 25, 37, 1) 16%, rgba(22, 25, 37, 1) 84%, rgba(0, 0, 0, 1) 100%);
                 align-items: center;
-                justify-content: center;
+                padding: 5vh 0 5vh 0;
 
-                div {
-                    @include size(85%, auto);
-                    @include flex(column, center, center);
+                .contacto-header {
+                    grid-area: header;
+                    justify-self: center;
+                    padding: 0 15px 30px 15px;
+                }
 
-                    img {
-                        @include size(150px, 150px);
+                .contacto-datos {
+                    text-align: center;
+                    grid-area: datos;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: subgrid;
+                    grid-template-areas:
+                        "dheader"
+                        "dmail"
+                        "dmail"
+                        "dwsp"
+                        "dwsp"
+                    ;
+                    justify-items: center;
+
+                    div {
+                        @include size(85%, auto);
+                        @include flex(column, center, center);
+
+                        img {
+                            @include size(150px, 150px);
+                        }
+                    }
+
+                    .datos-header {
+                        grid-area: dheader;
+                        text-transform: uppercase;
+                    }
+
+                    .datos-mail {
+                        grid-area: dmail;
+                    }
+
+                    .datos-wsp {
+                        grid-area: dwsp;
+
+                        button {
+                            @include button-contenedor();
+                            background-color: green;
+                            padding: 10px;
+                            margin: 15px 0px 5px 0px;
+                        }
                     }
                 }
 
-                .datos-header {
-                    grid-area: dheader;
-                }
-
-                .datos-mail {
-                    grid-area: dmail;
-                }
-
-                .datos-wsp {
-                    grid-area: dwsp;
-
-                    button {
-                        @include button-contenedor();
-                        background-color: green;
-                        padding: 10px;
-                        margin: 15px 0px 5px 0px;
-                    }
-                }
-            }
-        }
-
-        form {
-            @include size(100%, auto);
-            grid-area: form;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: subgrid;
-            grid-template-areas:
-                "fheader fheader"
-                "fnombre ftexto"
-                "fmail ftexto"
-                "freset ftexto"
-                "fenviar ftexto"
-            ;
-            align-items: center;
-
-            div {
-                label {
-                    @include text(18px, $color-texto, 500);
-                    margin-bottom: 10px;
-                }
-
-                input {
+                form {
                     @include size(100%, auto);
-                    @include text(18px, $color-texto, 400);
-                    border-radius: 8px;
-                    border-style: none;
-                    font-family: "Roboto", sans-serif;
-                    padding: 10px 10px 10px 10px;
+                    grid-area: form;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: subgrid;
+                    grid-template-areas:
+                        "fheader fheader"
+                        "fnombre ftexto"
+                        "fmail ftexto"
+                        "freset ftexto"
+                        "fenviar ftexto"
+                    ;
+                    align-items: center;
+                    justify-items: center;
+
+                    div {
+                        label {
+                            @include text(18px, $color-texto, 500);
+                            margin-bottom: 10px;
+                        }
+
+                        input {
+                            @include size(100%, auto);
+                            @include text(18px, $color-texto, 400);
+                            border-radius: 8px;
+                            border-style: none;
+                            font-family: "Roboto", sans-serif;
+                            padding: 10px 10px 10px 10px;
+                        }
+                    }
+
+                    .form-header {
+                        grid-area: fheader;
+                        @include size(100%, auto);
+                        text-transform: uppercase;
+                        text-align: center;
+                        justify-self: flex-start;
+
+                    }
+
+                    .form-nombre {
+                        grid-area: fnombre;
+                        @include size(85%, 90%);
+                        @include flex(column, center, flex-start);
+                        justify-self: center;
+
+                        input {
+                            color: $color-texto-input;
+                        }
+                    }
+
+                    .form-mail {
+                        grid-area: fmail;
+                        @include size(85%, 90%);
+                        @include flex(column, center, flex-start);
+                        justify-self: center;
+
+                        input {
+                            color: $color-texto-input;
+                        }
+                    }
+
+                    .form-consulta {
+                        grid-area: ftexto;
+                        @include size(85%, 90%);
+                        @include flex(column, flex-start, flex-start);
+                        justify-self: center;
+
+                        textarea {
+                            @include size(100%, 90%);
+                            @include text(18px, $color-texto, 400);
+                            border-radius: 11px;
+                            font-family: "Roboto", sans-serif;
+                            padding: 10px 10px 10px 10px;
+                            color: $color-texto-input;
+                        }
+                    }
+
+                    .form-reset {
+                        grid-area: freset;
+                        @include size(85%, auto);
+                        justify-self: center;
+                        align-self: flex-end;
+
+                        input {
+                            @include flex(row,center,center);
+                            @include button-contenedor();
+                            background-color: $color-botprimario;
+
+                        }
+                    }
+
+                    .form-enviar {
+                        grid-area: fenviar;
+                        @include size(85%, auto);
+                        justify-self: center;
+                        align-self: flex-start;
+
+                        input {
+                            @include flex(row,center,center);
+                            @include button-contenedor();
+                            background-color: $color-botsecundario;
+                        }
+                    }
                 }
             }
 
-            .form-header {
-                grid-area: fheader;
-                @include size(100%, auto);
-                text-align: center;
-                justify-self: flex-start;
-            }
 
-            .form-nombre {
-                grid-area: fnombre;
-                @include size(85%, 90%);
-                @include flex(column, center, flex-start);
-                justify-self: center;
-
-                input {
-                    color: $color-texto-input;
-                }
-            }
-
-            .form-mail {
-                grid-area: fmail;
-                @include size(85%, 90%);
-                @include flex(column, center, flex-start);
-                justify-self: center;
-
-                input {
-                    color: $color-texto-input;
-                }
-            }
-
-            .form-consulta {
-                grid-area: ftexto;
-                @include size(85%, 90%);
-                @include flex(column, flex-start, flex-start);
-                justify-self: center;
-
-                textarea {
-                    @include size(100%, 90%);
-                    @include text(18px, $color-texto, 400);
-                    border-radius: 11px;
-                    font-family: "Roboto", sans-serif;
-                    padding: 10px 10px 10px 10px;
-                    color: $color-texto-input;
-                }
-            }
-
-            .form-reset {
-                grid-area: freset;
-                @include size(85%, auto);
-                justify-self: center;
-                align-self: flex-end;
-
-                input {
-                    @include button-contenedor();
-                    background-color: $color-botprimario;
-
-                }
-            }
-
-            .form-enviar {
-                grid-area: fenviar;
-                @include size(85%, auto);
-                justify-self: center;
-                align-self: flex-start;
-
-                input {
-                    @include button-contenedor();
-                    background-color: $color-botsecundario;
-                }
-            }
         }
+
     }
 }

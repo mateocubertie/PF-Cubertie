@@ -681,6 +681,7 @@ body {
                                 div {
                                     @include size(140px, 224px);
                                     border-radius: 20px;
+
                                     h4 {
                                         font-size: 14px;
                                     }
@@ -992,6 +993,161 @@ body {
                 }
             }
         }
+
+        //!CONTACTO
+        /*Contacto*/
+        .contacto {
+            @media screen and (max-width: 970px) {
+                .grid-container-contacto {
+                    .contacto-header {
+                        h1 {
+                            font-size: 48px;
+                        }
+                    }
+
+                    .contacto-datos {
+                        div {
+                            img {
+                                @include size(120px, 120px)
+                            }
+                        }
+
+                        .datos-header {
+                            h2 {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+
+                    form {
+                        div {
+                            label {
+                                font-size: 16px;
+                            }
+
+                            input {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .form-header {
+                            h2 {
+                                font-size: 24px;
+                            }
+                        }
+                        .form-consulta {
+                            textarea {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 750px) {
+                .grid-container-contacto {
+                    padding: 0;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 85vh);
+                    grid-template-areas:
+                        "datos"
+                        "form"
+                    ;
+
+                    .contacto-header {
+                        display: none;
+                    }
+
+                    .contacto-datos {
+                        @include size(100%,100%);
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(5, 20%);
+                        grid-template-areas:
+                            "dheader"
+                            "dmail"
+                            "dmail"
+                            "dwsp"
+                            "dwsp"
+                        ;
+
+                        div {
+                            img {
+                                @include size(170px,170px);
+                            }
+                        }
+
+                        .datos-wsp {
+                            a {
+                                button {
+                                    margin-top: 22px;
+                                    font-size: 16px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    form {
+                        @include size(100%,100%);
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: repeat(6, 16.6666%);
+                        grid-template-areas:
+                            "fheader fheader"
+                            "fnombre fnombre"
+                            "fmail fmail"
+                            "ftexto ftexto"
+                            "ftexto ftexto"
+                            "freset fenviar"
+                        ;
+
+                        .form-reset,
+                        .form-enviar {
+                            align-self: center;
+                        }
+
+                    }
+                }
+            }
+            @media screen and (max-height: 685px) {
+                .grid-container-contacto {
+                    padding: 0;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 580px);
+                    grid-template-areas:
+                        "datos"
+                        "form"
+                    ;
+
+                    .contacto-datos {
+                        @include size(100%,100%);
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(5, 20%);
+                        grid-template-areas:
+                            "dheader"
+                            "dmail"
+                            "dmail"
+                            "dwsp"
+                            "dwsp"
+                        ;
+                    }
+
+                    form {
+                        @include size(100%,100%);
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: repeat(6, 16.6666%);
+                        grid-template-areas:
+                            "fheader fheader"
+                            "fnombre fnombre"
+                            "fmail fmail"
+                            "ftexto ftexto"
+                            "ftexto ftexto"
+                            "freset fenviar"
+                        ;
+
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1004,8 +1160,7 @@ body {
 
 
 
-//!CONTACTO
-/*Contacto*/
+
 
 //!FOOTER
 footer {
