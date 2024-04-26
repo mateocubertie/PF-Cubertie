@@ -108,8 +108,6 @@ body {
                             font-size: 11px;
                         }
                     }
-
-                    .hero-buttons {}
                 }
             }
         }
@@ -682,7 +680,7 @@ body {
 
                                 div {
                                     @include size(140px, 224px);
-
+                                    border-radius: 20px;
                                     h4 {
                                         font-size: 14px;
                                     }
@@ -720,32 +718,6 @@ body {
                     }
                 }
             }
-
-            @media screen and (max-width: 00px) {
-                div {
-                    h2 {}
-
-                    div {
-                        div {
-                            h3 {}
-
-                            div {
-                                div {
-                                    h4 {}
-
-                                    div {
-                                        h5 {}
-
-                                        button {
-                                            img {}
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
 
         /*Dudas*/
@@ -758,20 +730,283 @@ body {
                 }
             }
         }
+
+        //!ASESORIAS
+        /*Info*/
+        .info-asesorias {
+            @media screen and (max-width: 1000px) {
+                background-position: center;
+
+                div {
+                    div {
+                        h1 {
+                            font-size: 38px;
+                        }
+
+                        h2 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+
+                        div {
+                            a {
+                                button {
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 820px) {
+                background-position: right;
+
+                div {
+                    @include flex(row, center, center);
+                    @include size(100%, 700px);
+                    margin: 0;
+
+                    background: rgb(22, 25, 37);
+                    background: linear-gradient(100deg, rgba(22, 25, 37, 1) 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, rgba(22, 25, 37, 1) 100%);
+
+                    div {
+                        @include size(80%, 100%);
+                        background: none;
+                        text-align: center;
+
+                        h1 {
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                div {
+                    div {
+                        h1 {
+                            font-size: 26px;
+                        }
+
+                        h2 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+
+                        div {
+                            a {
+                                button {
+                                    font-size: 12px;
+                                    padding: 12px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Contenidos*/
+        .contenido-asesorias {
+            @media screen and (max-width: 1200px) {
+                div {
+                    @include size(70%, 30%);
+
+                    div {
+                        img {
+                            @include size(140px, 140px);
+                        }
+
+                        div {
+                            div {
+                                h3 {
+                                    font-size: 20px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 690px) {
+                height: auto;
+
+                div {
+                    @include size(80%, auto);
+                    margin-bottom: 60px;
+
+                    div {
+                        @include flex(column, center, center);
+                        margin: 15px;
+
+                        img {
+                            @include size(170px, 170px);
+                            padding: 0;
+                        }
+
+                        div {
+                            @include flex(column, center, center);
+                            @include size(100%, auto);
+
+                            div {
+                                text-align: center;
+
+                                h3 {
+                                    width: 100%;
+                                }
+
+                                p {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .contenido-2 {
+                    div {
+                        @include flex(column-reverse, center, center);
+
+                        div {
+                            @include flex(column, center, center);
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 445px) {
+                div {
+
+                    div {
+                        margin: 8px;
+
+                        img {
+                            @include size(110px, 110px);
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Paquetes*/
+        .paquetes-asesorias {
+            @media screen and (max-width: 1400px) {
+                @include size(100%, 40rem);
+
+                div {
+                    div {
+                        @include size(250px, 450px);
+                        border-radius: 25px;
+
+                        h4 {
+                            font-size: 20px;
+                        }
+
+                        ul {
+                            li {
+                                font-size: 14px;
+                            }
+                        }
+
+                        div {
+                            @include flex(column, center, center);
+                            margin: 0;
+                            padding: 0;
+
+                            h5 {
+                                font-size: 22px;
+                            }
+
+                            button {
+                                @include size (90px, 45px);
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 990px) {
+                div {
+                    @include size(792px, auto);
+
+                    div {
+                        @include size(220px, 400px);
+                        margin: 8px 12px 8px 12px;
+                        padding: 8px 12px 8px 12px;
+
+                        h4 {
+                            font-size: 18px;
+                        }
+
+                        ul {
+                            padding-left: 24px;
+
+                            li {
+                                padding-bottom: 8px;
+                            }
+                        }
+
+                        div {
+                            @include flex(row, space-around, center);
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 740px) {
+                padding-bottom: 60px;
+                @include size(100%, auto);
+
+                div {
+                    @include size(80%, auto);
+                    @include flex(column, center, center);
+
+                    div {
+                        @include size(300px, 450px);
+                    }
+                }
+            }
+        }
+
+        /*Preguntas*/
+        .dudas {
+            @media screen and (max-width: 996px) {
+                div {
+                    a {
+                        @include size(239px, 80px);
+                    }
+                }
+            }
+        }
     }
 }
 
-//!ASESORIAS
-/*Info*/
-/*Contenidos*/
-/*Paquetes*/
-/*Preguntas*/
+
+
+
+
+
 
 
 
 
 //!CONTACTO
 /*Contacto*/
+
 //!FOOTER
 footer {
     @media screen and (max-width: 1000px) {

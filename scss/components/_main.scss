@@ -479,7 +479,7 @@ body {
             div {
                 @include size(80rem, 54rem);
                 @include flex(row, flex-start, center);
-                margin: 0 40px 0 40px;
+                margin: 0 60px 0 60px;
 
                 div {
                     @include size(50%, auto);
@@ -523,7 +523,8 @@ body {
             background: linear-gradient(0deg, rgba(98, 60, 234, 1) 75%, rgba(22, 25, 37, 1) 100%);
 
             div {
-                @include size(60%, 30%);
+                @include size(60%, auto);
+                min-height: 30%;
                 @include flex(row, center, center);
                 background-color: $color-primario;
                 border-radius: 10px;
@@ -569,7 +570,7 @@ body {
 
             div {
                 @include size(80%, auto);
-                @include flex(row, space-around, center);
+                @include flex(row, space-evenly, center);
 
                 .tarjeta-asesoria {
                     @include box-shadow();
@@ -581,7 +582,7 @@ body {
                 }
 
                 div {
-                    @include size(24rem, 36rem);
+                    @include size(334px, 576px);
                     @include flex(column, space-around, center);
                     background-color: $color-primario;
                     border-style: solid;
@@ -596,6 +597,7 @@ body {
 
                     ul {
                         text-align: left;
+                        margin: 0;
 
                         li {
                             padding-bottom: 1rem;
