@@ -263,11 +263,11 @@ body {
                             .clientes {
                                 div {
                                     div {
-                                        h4 {
+                                        h5 {
                                             margin-bottom: 3px;
                                         }
 
-                                        h5 {
+                                        h4 {
                                             margin-bottom: 3px;
                                         }
 
@@ -291,12 +291,12 @@ body {
                                     div {
                                         margin-left: 14px;
 
-                                        h4 {
+                                        h5 {
                                             font-size: 18px;
                                             margin: 0;
                                         }
 
-                                        h5 {
+                                        h4 {
                                             font-size: 16px;
                                             margin: 0;
                                         }
@@ -378,11 +378,11 @@ body {
                             .clientes {
                                 div {
                                     div {
-                                        h4 {
+                                        h5 {
                                             font-size: 18px;
                                         }
 
-                                        h5 {
+                                        h4 {
                                             font-size: 15px;
                                         }
 
@@ -1325,13 +1325,10 @@ footer {
                     div {
                         ul {
                             li {
-                                h5 {
                                     font-size: 14px;
-                                }
-
                                 ul {
                                     li {
-                                        h6 {
+                                        a {
                                             font-size: 12px;
                                         }
                                     }
@@ -1342,7 +1339,8 @@ footer {
                 }
 
                 .politicas {
-                    h6 {
+
+                    li {
                         font-size: 12px;
                     }
                 }
@@ -1350,10 +1348,20 @@ footer {
 
             .redes {
                 div {
-                    h5 {
-                        font-size: 14px;
+                    ul {
+                        li 
+                        {
+                            font-size: 14px;
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        
                     }
-
                     div {
                         div {
                             a {

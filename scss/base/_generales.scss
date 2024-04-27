@@ -21,7 +21,8 @@ h6,
 button,
 a,
 label,
-li {
+li,
+span {
     font-family: "Montserrat", sans-serif;
     color: $color-texto;
 }
@@ -44,7 +45,8 @@ h6 {
 
 li,
 a,
-input {
+input,
+span {
     font-weight: 500;
 }
 

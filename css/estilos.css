@@ -39,7 +39,8 @@ h6,
 button,
 a,
 label,
-li {
+li,
+span {
   font-family: "Montserrat", sans-serif;
   color: white; }
 
@@ -65,7 +66,8 @@ h6 {
 
 li,
 a,
-input {
+input,
+span {
   font-weight: 500; }
 
 p {
@@ -344,12 +346,12 @@ body {
           justify-content: flex-start;
           align-items: center;
           margin: 10px 0px 10px 30px; }
-          body main .testimonios div div div .clientes div div h5 {
+          body main .testimonios div div div .clientes div div h4 {
             width: 100%;
             font-size: 18px;
             color: white;
             text-transform: uppercase; }
-          body main .testimonios div div div .clientes div div h4 {
+          body main .testimonios div div div .clientes div div h5 {
             width: 100%;
             font-size: 20px;
             color: white;
@@ -1223,10 +1225,10 @@ footer {
               display: flex;
               flex-direction: column;
               justify-content: flex-start;
-              align-items: flex-start; }
-              footer div .intlinks-footer .secciones div ul li h5 {
-                font-size: 18px;
-                color: white; }
+              align-items: flex-start;
+              font-size: 18px;
+              color: white;
+              font-weight: 700; }
               footer div .intlinks-footer .secciones div ul li ul {
                 display: flex;
                 flex-direction: column;
@@ -1237,12 +1239,11 @@ footer {
                 footer div .intlinks-footer .secciones div ul li ul li {
                   background-color: transparent; }
                   footer div .intlinks-footer .secciones div ul li ul li a {
+                    text-decoration: none;
+                    font-size: 14px;
                     color: white;
-                    text-decoration: none; }
-                    footer div .intlinks-footer .secciones div ul li ul li a h6 {
-                      font-size: 14px;
-                      color: white;
-                      margin-bottom: 0; }
+                    font-weight: 550;
+                    margin-bottom: 0; }
       footer div .intlinks-footer .politicas {
         width: 100%;
         height: auto;
@@ -1250,10 +1251,13 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: none; }
-        footer div .intlinks-footer .politicas h6 {
+        list-style: none;
+        margin: none;
+        padding: 0; }
+        footer div .intlinks-footer .politicas li {
           font-size: 15px;
           color: white;
+          font-weight: 700;
           text-decoration: underline;
           padding: 20px 10px 20px 10px;
           margin-bottom: 0; }
@@ -1270,9 +1274,10 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center; }
-        footer div .redes div h5 {
+        footer div .redes div span {
           font-size: 18px;
           color: white;
+          font-weight: 700;
           margin: 0px 0px 10px 0px; }
         footer div .redes div div {
           display: flex;
@@ -1411,19 +1416,19 @@ body main {
       padding: 11px;
       font-size: 14px; } }
   @media screen and (max-width: 1380px) {
-    body main .testimonios div div div .clientes div div h4 {
-      margin-bottom: 3px; }
     body main .testimonios div div div .clientes div div h5 {
+      margin-bottom: 3px; }
+    body main .testimonios div div div .clientes div div h4 {
       margin-bottom: 3px; }
     body main .testimonios div div div .clientes div div p {
       margin: 3px 0 3px 0; } }
   @media screen and (max-width: 1244px) {
     body main .testimonios div div div .clientes div div {
       margin-left: 14px; }
-      body main .testimonios div div div .clientes div div h4 {
+      body main .testimonios div div div .clientes div div h5 {
         font-size: 18px;
         margin: 0; }
-      body main .testimonios div div div .clientes div div h5 {
+      body main .testimonios div div div .clientes div div h4 {
         font-size: 16px;
         margin: 0; }
       body main .testimonios div div div .clientes div div p {
@@ -1455,9 +1460,9 @@ body main {
   @media screen and (max-width: 433px) {
     body main .testimonios h2 {
       font-size: 30px; }
-    body main .testimonios div div div .clientes div div h4 {
-      font-size: 18px; }
     body main .testimonios div div div .clientes div div h5 {
+      font-size: 18px; }
+    body main .testimonios div div div .clientes div div h4 {
       font-size: 15px; }
     body main .testimonios div div div .clientes div div p {
       font-size: 14px; } }
@@ -1942,14 +1947,16 @@ body main {
   footer div .logo-footer img {
     width: 100px;
     height: 100px; }
-  footer div .intlinks-footer .secciones div ul li h5 {
+  footer div .intlinks-footer .secciones div ul li {
     font-size: 14px; }
-  footer div .intlinks-footer .secciones div ul li ul li h6 {
+    footer div .intlinks-footer .secciones div ul li ul li a {
+      font-size: 12px; }
+  footer div .intlinks-footer .politicas li {
     font-size: 12px; }
-  footer div .intlinks-footer .politicas h6 {
-    font-size: 12px; }
-  footer div .redes div h5 {
+  footer div .redes div ul li {
     font-size: 14px; }
+    footer div .redes div ul li ul li a {
+      font-size: 12px; }
   footer div .redes div div div a img {
     width: 38px;
     height: 38px; } }

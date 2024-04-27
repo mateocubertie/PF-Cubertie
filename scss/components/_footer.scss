@@ -46,10 +46,7 @@ footer {
 
                         li {
                             @include flex(column, flex-start, flex-start);
-
-                            h5 {
-                                @include text(18px, $color-texto);
-                            }
+                                @include text(18px, $color-texto, 700);
 
                             ul {
                                 @include flex (column, center, flex-start);
@@ -58,15 +55,10 @@ footer {
 
                                 li {
                                     background-color: transparent;
-
                                     a {
-                                        color: $color-texto;
                                         text-decoration: none;
-
-                                        h6 {
-                                            @include text(14px, $color-texto);
+                                            @include text(14px, $color-texto, 550);
                                             margin-bottom: 0;
-                                        }
                                     }
                                 }
                             }
@@ -78,10 +70,11 @@ footer {
             .politicas {
                 @include size(100%, auto);
                 @include flex(row, space-between, center);
+                list-style: none;
                 margin: none;
-
-                h6 {
-                    @include text(15px, $color-texto);
+                padding: 0;
+                li {
+                    @include text(15px, $color-texto, 700);
                     text-decoration: underline;
                     padding: 20px 10px 20px 10px;
                     margin-bottom: 0;
@@ -96,8 +89,8 @@ footer {
             div {
                 margin: 0;
                 @include flex(column, center, center);
-                h5 {
-                    @include text(18px,$color-texto);
+                span {
+                    @include text(18px,$color-texto, 700);
                     margin: 0px 0px 10px 0px;
                 }
 

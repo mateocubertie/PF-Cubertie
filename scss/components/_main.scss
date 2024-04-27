@@ -194,12 +194,12 @@ body {
                                     @include flex(column, flex-start, center);
                                     margin: 10px 0px 10px 30px;
 
-                                    h5 {
+                                    h4 {
                                         width: 100%;
                                         @include text(18px, $color-texto, def, uppercase);
                                     }
 
-                                    h4 {
+                                    h5 {
                                         width: 100%;
                                         @include text(20px, $color-texto, def, uppercase);
                                     }
