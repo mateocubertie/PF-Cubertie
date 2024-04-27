@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.gradiente-principal-top, body main .story, body main .gp-productos, body main .estudios {
+  background: #050505;
+  background: linear-gradient(180deg, #030612 0%, #161925 57%);
+  color: #161925; }
+
+.gradiente-principal-bottom, body main .testimonios {
+  background-color: #161925;
+  background: linear-gradient(0deg, #030612 0%, #161925 57%); }
+
+.gradiente-principal-mono, body main .contacto .grid-container-contacto {
+  background-color: #050505;
+  background: linear-gradient(0deg, black 0%, #161925 16%, #161925 84%, black 100%); }
+
+.gradiente-secundario-top, body main .contenido-asesorias {
+  background: #623cea;
+  background: linear-gradient(0deg, #623cea 75%, #161925 100%); }
+
+.gradiente-secundario-bottom, body main .paquetes-asesorias {
+  background: #623cea;
+  background: linear-gradient(180deg, #623cea 75%, #161925 100%); }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +44,16 @@ li {
   color: white; }
 
 h1 {
-  color: white;
-  font-style: italic;
   font-size: 60px;
+  color: white;
   text-transform: uppercase;
+  font-style: italic;
   margin-bottom: 20px; }
+
+h2 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
 
 h1,
 h2,
@@ -46,6 +72,27 @@ p {
   font-family: "Helvetica", sans-serif;
   font-weight: 300;
   color: white; }
+
+.gradiente-principal-top, body main .story, body main .gp-productos, body main .estudios {
+  background: #050505;
+  background: linear-gradient(180deg, #030612 0%, #161925 57%);
+  color: #161925; }
+
+.gradiente-principal-bottom, body main .testimonios {
+  background-color: #161925;
+  background: linear-gradient(0deg, #030612 0%, #161925 57%); }
+
+.gradiente-principal-mono, body main .contacto .grid-container-contacto {
+  background-color: #050505;
+  background: linear-gradient(0deg, black 0%, #161925 16%, #161925 84%, black 100%); }
+
+.gradiente-secundario-top, body main .contenido-asesorias {
+  background: #623cea;
+  background: linear-gradient(0deg, #623cea 75%, #161925 100%); }
+
+.gradiente-secundario-bottom, body main .paquetes-asesorias {
+  background: #623cea;
+  background: linear-gradient(180deg, #623cea 75%, #161925 100%); }
 
 header nav div div ul li .cart-img {
   display: block; }
@@ -91,8 +138,6 @@ body {
         height: auto; }
         body main .hero div .hero-copy h2 {
           font-size: 25px;
-          color: white;
-          text-transform: uppercase;
           margin-bottom: 20px; }
         body main .hero div .hero-copy p {
           font-size: 20px;
@@ -145,10 +190,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background: #050505;
-    background: linear-gradient(180deg, #030612 0%, #161925 57%);
-    color: #161925; }
+    align-items: center; }
     body main .story div {
       width: 87%;
       height: 80vh;
@@ -167,9 +209,6 @@ body {
         body main .story div .story-text h2 {
           width: 100%;
           height: auto;
-          font-size: 40px;
-          color: white;
-          text-transform: uppercase;
           font-style: italic;
           padding-bottom: 12px; }
         body main .story div .story-text h3 {
@@ -266,14 +305,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #161925;
-    background: linear-gradient(0deg, #030612 0%, #161925 57%);
     color: white; }
     body main .testimonios h2 {
       width: 100%;
       height: auto;
-      font-size: 40px;
-      text-transform: uppercase;
       font-style: italic;
       text-align: center;
       margin: 20px 0 20px 0; }
@@ -331,11 +366,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    /*h1 {
-                @include text(45px, $color-texto, def, uppercase, italic);
-                margin: 40px 0px 40px 0px;
-            }*/ }
+    align-items: center; }
     body main .gp-info div {
       background-position: center;
       background-size: cover;
@@ -360,9 +391,7 @@ body {
           body main .gp-info div div div h2 {
             width: 100%;
             height: auto;
-            font-size: 50px;
             color: #ef476f;
-            text-transform: uppercase;
             font-style: italic;
             margin-top: 30px; }
           body main .gp-info div div div h3 {
@@ -404,12 +433,20 @@ body {
               background-color: #07a0c3; }
     body main .gp-info .gp-info-guias {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background-image: url(../img/guias.jpg);
       background-position: left;
       text-align: left; }
+      body main .gp-info .gp-info-guias h1 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: #161925;
+        background: linear-gradient(0deg, rgba(22, 25, 37, 0) 0%, rgba(22, 25, 37, 0.25) 8%, rgba(22, 25, 37, 0.48) 15%, rgba(22, 25, 37, 0.48) 85%, rgba(22, 25, 37, 0.25) 92%, rgba(22, 25, 37, 0) 100%);
+        padding: 40px 0px 40px 0px;
+        margin: 0; }
       body main .gp-info .gp-info-guias .gp-info-text1 {
         display: flex;
         flex-direction: row;
@@ -435,9 +472,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: #050505;
-    background: linear-gradient(180deg, #030612 0%, #161925 57%);
-    color: #161925;
     padding-top: 40px; }
     body main .gp-productos div {
       width: 85%;
@@ -448,9 +482,6 @@ body {
       align-items: center;
       margin-bottom: 40px; }
       body main .gp-productos div h2 {
-        font-size: 40px;
-        color: white;
-        text-transform: uppercase;
         font-style: italic;
         margin: 40px 0px 40px 0px; }
       body main .gp-productos div div {
@@ -578,9 +609,6 @@ body {
       width: 100%;
       height: 10vh; }
     body main .faq h2 {
-      font-size: 40px;
-      color: white;
-      text-transform: uppercase;
       font-style: italic;
       text-align: center;
       padding: 40px 0 40px 0; }
@@ -660,13 +688,6 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0; }
-        body main .info-asesorias div div h1 {
-          font-size: 50px;
-          color: white; }
-        body main .info-asesorias div div h2 {
-          font-size: 25px;
-          color: white;
-          text-transform: uppercase; }
         body main .info-asesorias div div p {
           font-size: 20px;
           color: white;
@@ -706,9 +727,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 5rem;
-    background: #623cea;
-    background: linear-gradient(0deg, #623cea 75%, #161925 100%); }
+    padding-top: 5rem; }
     body main .contenido-asesorias div {
       width: 60%;
       height: auto;
@@ -761,9 +780,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-    background: #623cea;
-    background: linear-gradient(180deg, #623cea 75%, #161925 100%); }
+    justify-content: center; }
     body main .paquetes-asesorias div {
       width: 80%;
       height: auto;
@@ -901,11 +918,11 @@ body {
         align-items: flex-start;
         max-width: 40%; }
         body main .historia div div h2 {
-          font-size: 25px;
           color: #ef476f;
-          text-transform: uppercase;
           margin-bottom: 10px; }
         body main .historia div div p {
+          font-size: 20px;
+          color: white;
           font-weight: 500; }
         body main .historia div div img {
           display: none; }
@@ -920,8 +937,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 91vh;
-    background: #030612;
-    background: linear-gradient(180deg, #030612 0%, #161925 20%, #161925 100%);
     padding: 40px 0 40px 0; }
     body main .estudios div {
       width: 80%;
@@ -931,9 +946,6 @@ body {
       justify-content: space-between;
       align-items: center; }
       body main .estudios div h2 {
-        font-size: 30px;
-        color: white;
-        text-transform: uppercase;
         display: none;
         margin-bottom: 15px; }
       body main .estudios div img {
@@ -963,8 +975,6 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto repeat(5, 125px);
       grid-template-areas: "header header header" "datos form form" "datos form form" "datos form form" "datos form form" "datos form form";
-      background-color: #050505;
-      background: linear-gradient(0deg, black 0%, #161925 16%, #161925 84%, black 100%);
       align-items: center;
       padding: 5vh 0 5vh 0; }
       body main .contacto .grid-container-contacto .contacto-header {
@@ -1489,7 +1499,7 @@ body main {
       font-size: 12px; } }
   @media screen and (max-height: 780px) {
     body main .historia {
-      height: 780px; } }
+      height: 780pxa; } }
   @media screen and (max-width: 1156px) {
     body main .estudios div div ul li {
       font-size: 14px; } }
@@ -1526,6 +1536,10 @@ body main {
   @media screen and (max-width: 865px) {
     body main .gp-info .gp-info-guias {
       background-position: right; }
+      body main .gp-info .gp-info-guias h1 {
+        background: #161925;
+        background: linear-gradient(90deg, #161925 0%, rgba(22, 25, 37, 0.8) 13%, rgba(22, 25, 37, 0.8) 87%, #161925 100%);
+        font-size: 38px; }
       body main .gp-info .gp-info-guias .gp-info-text1 {
         display: flex;
         flex-direction: row;
@@ -1558,6 +1572,13 @@ body main {
         font-size: 18px; }
       body main .gp-info div div div p {
         font-size: 14px; } }
+  @media screen and (max-width: 360px) {
+    body main .gp-info .gp-info-guias h1 {
+      font-size: 34px; } }
+  @media screen and (max-height: 625px) {
+    body main .gp-info {
+      width: 100%;
+      height: 1128px; } }
   @media screen and (max-width: 740px) {
     body main .gp-productos div {
       width: 95%;
@@ -1787,51 +1808,58 @@ body main {
       width: 120px;
       height: 120px; }
     body main .contacto .grid-container-contacto .contacto-datos .datos-header h2 {
-      font-size: 24px; }
+      font-size: 28px; }
     body main .contacto .grid-container-contacto form div label {
       font-size: 16px; }
     body main .contacto .grid-container-contacto form div input {
       font-size: 16px; }
     body main .contacto .grid-container-contacto form .form-header h2 {
-      font-size: 24px; }
+      font-size: 28px; }
     body main .contacto .grid-container-contacto form .form-consulta textarea {
       font-size: 16px; } }
   @media screen and (max-width: 750px) {
-    body main .contacto .grid-container-contacto {
-      padding: 0;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 85vh);
-      grid-template-areas: "datos" "form"; }
-      body main .contacto .grid-container-contacto .contacto-header {
-        display: none; }
-      body main .contacto .grid-container-contacto .contacto-datos {
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 20%);
-        grid-template-areas: "dheader" "dmail" "dmail" "dwsp" "dwsp"; }
-        body main .contacto .grid-container-contacto .contacto-datos div img {
-          width: 170px;
-          height: 170px; }
-        body main .contacto .grid-container-contacto .contacto-datos .datos-wsp a button {
-          margin-top: 22px;
-          font-size: 16px;
-          border-radius: 10px; }
-      body main .contacto .grid-container-contacto form {
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 16.6666%);
-        grid-template-areas: "fheader fheader" "fnombre fnombre" "fmail fmail" "ftexto ftexto" "ftexto ftexto" "freset fenviar"; }
-        body main .contacto .grid-container-contacto form .form-reset,
-        body main .contacto .grid-container-contacto form .form-enviar {
-          align-self: center; } }
+    body main .contacto {
+      width: 100%;
+      height: auto; }
+      body main .contacto .grid-container-contacto {
+        padding: 0;
+        grid-template-columns: 100%;
+        grid-template-rows: auto repeat(2, 85vh);
+        grid-template-areas: "header" "datos" "form"; }
+        body main .contacto .grid-container-contacto .contacto-header {
+          margin: 30px 0 30px 0;
+          padding: 0; }
+          body main .contacto .grid-container-contacto .contacto-header h1 {
+            font-size: 38px;
+            margin: 0; }
+        body main .contacto .grid-container-contacto .contacto-datos {
+          width: 100%;
+          height: 100%;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(5, 20%);
+          grid-template-areas: "dheader" "dmail" "dmail" "dwsp" "dwsp"; }
+          body main .contacto .grid-container-contacto .contacto-datos div img {
+            width: 140px;
+            height: 140px; }
+          body main .contacto .grid-container-contacto .contacto-datos .datos-wsp a button {
+            margin-top: 22px;
+            font-size: 16px;
+            border-radius: 10px; }
+        body main .contacto .grid-container-contacto form {
+          width: 100%;
+          height: 100%;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(6, 16.6666%);
+          grid-template-areas: "fheader fheader" "fnombre fnombre" "fmail fmail" "ftexto ftexto" "ftexto ftexto" "freset fenviar"; }
+          body main .contacto .grid-container-contacto form .form-reset,
+          body main .contacto .grid-container-contacto form .form-enviar {
+            align-self: center; } }
   @media screen and (max-height: 685px) {
     body main .contacto .grid-container-contacto {
       padding: 0;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 580px);
-      grid-template-areas: "datos" "form"; }
+      grid-template-columns: 100%;
+      grid-template-rows: auto repeat(2, 580px);
+      grid-template-areas: "header" "datos" "form"; }
       body main .contacto .grid-container-contacto .contacto-datos {
         width: 100%;
         height: 100%;

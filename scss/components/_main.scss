@@ -25,12 +25,12 @@ body {
                     @include size(auto, auto);
 
                     h2 {
-                        @include text(25px, $color-texto, def, uppercase);
+                        font-size: 25px;
                         margin-bottom: 20px;
                     }
 
                     p {
-                        @include text(20px, $color-texto, 500);
+                        @include text(nth($header-desktop-sizes, 3), $color-texto, 500);
                     }
                 }
 
@@ -69,10 +69,7 @@ body {
         .story {
             @include size(100%, auto);
             @include flex(row, center, center);
-            background: $color-bg;
-            background: linear-gradient(180deg, rgba(3, 6, 18, 1) 0%, rgba(22, 25, 37, 1) 57%);
-            color: rgb(22, 25, 37);
-
+            @extend .gradiente-principal-top;
             div {
                 @include size(87%, 80vh);
                 @include flex(row, space-around, center);
@@ -84,7 +81,7 @@ body {
 
                     h2 {
                         @include size(100%, auto);
-                        @include text(40px, $color-texto, def, uppercase, italic);
+                        font-style: italic;
                         padding-bottom: 12px;
                     }
 
@@ -162,13 +159,12 @@ body {
 
         .testimonios {
             @include flex(column, center, center);
-            background-color: $color-primario;
-            background: linear-gradient(0deg, rgba(3, 6, 18, 1) 0%, rgba(22, 25, 37, 1) 57%);
+            @extend .gradiente-principal-bottom;
             color: $color-texto;
 
             h2 {
                 @include size(100%, auto);
-                @include text(40px, def, def, uppercase, italic);
+                font-style: italic;
                 text-align: center;
                 margin: 20px 0 20px 0;
             }
@@ -226,10 +222,7 @@ body {
             @include size(100%, 180vh);
             @include flex(column, flex-start, center);
 
-            /*h1 {
-                @include text(45px, $color-texto, def, uppercase, italic);
-                margin: 40px 0px 40px 0px;
-            }*/
+            
 
             div {
                 @include background-img(center, cover, no-repeat);
@@ -246,7 +239,8 @@ body {
 
                         h2 {
                             @include size(100%, auto);
-                            @include text(50px, $color-botsecundario, def, uppercase, italic);
+                            color: $color-botsecundario;
+                            font-style: italic;
 
                             margin-top: 30px
                         }
@@ -258,7 +252,7 @@ body {
 
                         p {
                             @include size(100%, auto);
-                            @include text(20px, $color-texto, 500);
+                            @include text(nth($header-desktop-sizes, 3), $color-texto, 500);
                             margin-top: 20px;
 
                         }
@@ -277,7 +271,15 @@ body {
             }
 
             .gp-info-guias {
-                @include flex(row, center, center);
+                h1 {
+                    @include size(100%,auto);
+                    text-align: center;
+                    background: rgb(22,25,37);
+background: linear-gradient(0deg, rgba(22,25,37,0) 0%, rgba(22,25,37,0.25) 8%, rgba(22,25,37,0.48) 15%, rgba(22,25,37,0.48) 85%, rgba(22,25,37,0.25) 92%, rgba(22,25,37,0) 100%);
+                    padding: 40px 0px 40px 0px;
+                    margin: 0;
+                }
+                @include flex(column, center, center);
                 background-image: url(../img/guias.jpg);
                 background-position: left;
                 text-align: left;
@@ -302,9 +304,7 @@ body {
         .gp-productos {
             @include size(100%, auto);
             @include flex(column, flex-start, center);
-            background: $color-bg;
-            background: linear-gradient(180deg, rgba(3, 6, 18, 1) 0%, rgba(22, 25, 37, 1) 57%);
-            color: rgb(22, 25, 37);
+            @extend .gradiente-principal-top;
             padding-top: 40px;
 
             div {
@@ -313,7 +313,7 @@ body {
                 margin-bottom: 40px;
 
                 h2 {
-                    @include text(40px, $color-texto, def, uppercase, italic);
+                    font-style: italic;
                     margin: 40px 0px 40px 0px;
                 }
 
@@ -412,7 +412,7 @@ body {
             }
 
             h2 {
-                @include text(40px, $color-texto, def, uppercase, italic);
+                font-style: italic;
                 text-align: center;
                 padding: 40px 0 40px 0;
             }
@@ -487,16 +487,9 @@ body {
                     @include flex(column, center, center);
                     margin: 0;
 
-                    h1 {
-                        @include text(50px, $color-texto);
-                    }
-
-                    h2 {
-                        @include text(25px, $color-texto, def, uppercase);
-                    }
 
                     p {
-                        @include text(20px, $color-texto, 500);
+                        @include text(nth($header-desktop-sizes, 3), $color-texto, 500);
                         margin-top: 20px;
                     }
 
@@ -520,8 +513,7 @@ body {
             @include size(100%, 54rem);
             @include flex(column, space-evenly, center);
             padding-top: 5rem;
-            background: $color-secundario;
-            background: linear-gradient(0deg, rgba(98, 60, 234, 1) 75%, rgba(22, 25, 37, 1) 100%);
+            @extend .gradiente-secundario-top;
 
             div {
                 @include size(60%, auto);
@@ -566,8 +558,8 @@ body {
             @include size(100%, 54rem);
             @include flex(row, center, center);
             justify-content: center;
-            background: $color-secundario;
-            background: linear-gradient(180deg, rgba(98, 60, 234, 1) 75%, rgba(22, 25, 37, 1) 100%);
+            @extend .gradiente-secundario-bottom;
+            
 
             div {
                 @include size(80%, auto);
@@ -675,12 +667,12 @@ body {
                     max-width: 40%;
 
                     h2 {
-                        @include text(25px, $color-resaltado, def, uppercase);
+                        color: $color-resaltado;
                         margin-bottom: 10px;
                     }
 
                     p {
-                        font-weight: 500;
+                        @include text(nth($header-desktop-sizes, 3), $color-texto, 500);
                     }
 
                     img {
@@ -698,8 +690,7 @@ body {
             @include size(100%, auto);
             @include flex(row, center, center);
             min-height: 91vh;
-            background: rgb(3, 6, 18);
-            background: linear-gradient(180deg, rgba(3, 6, 18, 1) 0%, rgba(22, 25, 37, 1) 20%, rgba(22, 25, 37, 1) 100%);
+            @extend .gradiente-principal-top;
             padding: 40px 0 40px 0;
 
             div {
@@ -707,7 +698,6 @@ body {
                 @include flex(row, space-between, center);
 
                 h2 {
-                    @include text(30px, $color-texto, def, uppercase);
                     display: none;
                     margin-bottom: 15px;
                 }
@@ -752,8 +742,7 @@ body {
                     "datos form form"
                     "datos form form"
                 ;
-                background-color: $color-bg;
-                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(22, 25, 37, 1) 16%, rgba(22, 25, 37, 1) 84%, rgba(0, 0, 0, 1) 100%);
+                @extend .gradiente-principal-mono;
                 align-items: center;
                 padding: 5vh 0 5vh 0;
 

@@ -27,13 +27,12 @@ li {
 }
 
 h1 {
-    color: $color-texto;
-    font-style: italic;
-    font-size: 60px;
-    text-transform: uppercase;
+    @include text(nth($header-desktop-sizes, 1), $color-texto, def, uppercase,italic);
     margin-bottom: 20px;
 }
-
+h2 {
+    @include text(nth($header-desktop-sizes, 2), $color-texto, def, uppercase);
+}
 h1,
 h2,
 h3,
