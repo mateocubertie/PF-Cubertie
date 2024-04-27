@@ -1346,11 +1346,13 @@ body main {
       font-size: 11px; } }
   @media screen and (max-width: 710px) {
     body main .hero div {
-      padding: 0 0 2vh 0; } }
-  @media screen and (max-width: 710px) {
-    body main .hero div {
       height: auto;
       padding: 20px 0px 20px 0px; } }
+  @media screen and (max-height: 660px) {
+    body main .hero div {
+      height: 500px; }
+    body main .hero img {
+      height: 66px; } }
   @media screen and (max-width: 1512px) {
     body main .story div .story-video iframe {
       width: 550px;
@@ -1470,9 +1472,12 @@ body main {
         font-size: 14px; } }
   @media screen and (max-width: 1000px) {
     body main .historia {
-      background-image: none; }
+      background-image: none;
+      height: auto;
+      min-height: 0; }
       body main .historia div {
-        justify-content: center; }
+        justify-content: center;
+        height: auto; }
         body main .historia div div {
           width: 100%;
           height: 100%;
@@ -1488,7 +1493,7 @@ body main {
             margin-bottom: 30px; }
           body main .historia div div img {
             display: block;
-            width: 100%;
+            width: 80%;
             height: auto; } }
   @media screen and (max-width: 375px) {
     body main .historia div div h1 {
@@ -1856,7 +1861,7 @@ body main {
             align-self: center; } }
   @media screen and (max-height: 685px) {
     body main .contacto .grid-container-contacto {
-      padding: 0;
+      padding-top: 30px;
       grid-template-columns: 100%;
       grid-template-rows: auto repeat(2, 580px);
       grid-template-areas: "header" "datos" "form"; }

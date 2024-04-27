@@ -115,16 +115,19 @@ body {
         @media screen and (max-width: 710px) {
             .hero {
                 div {
-                    padding: 0 0 2vh 0;
+                    height: auto;
+                    padding: 20px 0px 20px 0px;
                 }
             }
         }
-
-        @media screen and (max-width: 710px) {
+        @media screen and (max-height:660px) {
             .hero {
                 div {
-                    height: auto;
-                    padding: 20px 0px 20px 0px;
+                    height: 500px;
+                    
+                }
+                img {
+                    height: 66px;
                 }
             }
         }
@@ -421,10 +424,11 @@ body {
 
             @media screen and (max-width: 1000px) {
                 background-image: none;
-
+                height: auto;
+                min-height: 0;
                 div {
                     justify-content: center;
-
+                    height: auto;
                     div {
                         @include size(100%, 100%);
                         @include flex(column, flex-start, center);
@@ -442,7 +446,7 @@ body {
 
                         img {
                             display: block;
-                            width: 100%;
+                            width: 80%;
                             height: auto;
                         }
                     }
@@ -1136,15 +1140,14 @@ background: linear-gradient(90deg, rgba(22,25,37,1) 0%, rgba(22,25,37,0.8) 13%, 
 
             @media screen and (max-height: 685px) {
                 .grid-container-contacto {
-                    padding: 0;
+                    padding-top: 30px;
                     grid-template-columns: 100%;
                     grid-template-rows: auto repeat(2, 580px);
                     grid-template-areas:
                         "header"
                         "datos"
                         "form"
-                    ;
-
+                    ; 
                     .contacto-datos {
                         @include size(100%, 100%);
                         grid-template-columns: 1fr;
