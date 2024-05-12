@@ -68,15 +68,15 @@ $desktop-p: 20px;
 }
 
 @mixin button-contenedor($shadow: true) {
-    @include text(16px, $color-texto, 600, uppercase);
+    @include text(20px, $color-texto, 600);
     font-family: "Montserrat", sans-serif;
     background-color: $color-botsecundario;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     padding: 15px;
     margin: 5px 5px 5px 5px;
 
-    @if ($shadow ==true) {
+    @if ($shadow == true) {
         box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
         -webkit-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
         -moz-box-shadow: -1px 1px 36px 0px rgba(0, 0, 0, 0.72);
@@ -100,9 +100,17 @@ $desktop-p: 20px;
     -moz-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
 }
 
-@mixin gradiente-principal-responsive() {
-    background: rgb(22, 25, 37);
-    background: linear-gradient(100deg, rgba(22, 25, 37, 1) 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, rgba(22, 25, 37, 1) 100%);
+@mixin overlay-responsive-imagen($url, $position: def) {
+    @if ($position != def) {
+    background: 
+    linear-gradient(100deg, rgba(22, 25, 37, 1) 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, rgba(22, 25, 37, 1) 100%),
+    $url no-repeat $position;
+    }
+    @else {
+        background: 
+        linear-gradient(100deg, rgba(22, 25, 37, 1) 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, rgba(22, 25, 37, 1) 100%),
+        $url no-repeat center;
+    }
 }
 
 //! EXTENDS
