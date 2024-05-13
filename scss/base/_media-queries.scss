@@ -570,7 +570,7 @@ body {
 
             @media screen and (max-width: 865px) {
                 .gp-info-guias {
-                    @include overlay-responsive-imagen(url(../img/guias-c.jpg));
+                    @include overlay-responsive-imagen(url(../img/guias-c.jpg), left);
                     background-size: cover;
                     h1 {
                         background: rgb(22,25,37);
@@ -674,7 +674,7 @@ background: linear-gradient(90deg, rgba(22,25,37,1) 0%, rgba(22,25,37,0.8) 13%, 
                                         }
 
                                         button {
-                                            @include size(60px, 45px);
+                                            @include size(50px, 35px);
 
                                             img {
                                                 @include size(26px, 26px)
@@ -721,7 +721,7 @@ background: linear-gradient(90deg, rgba(22,25,37,1) 0%, rgba(22,25,37,0.8) 13%, 
                                         }
 
                                         button {
-                                            @include size(50px, 40px);
+                                            @include size(45px, 30px);
 
                                             img {
                                                 @include size(22px, 22px)

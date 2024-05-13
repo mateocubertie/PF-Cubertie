@@ -335,7 +335,9 @@ body {
           height: auto;
           border-color: rgba(85, 85, 85, 0.65);
           border-radius: 17%;
-          box-shadow: 5px 5px 3px rgba(108, 108, 108, 0.65); }
+          box-shadow: 5px 4px 25px 4px rgba(0, 0, 0, 0.49);
+          -webkit-box-shadow: 5px 4px 25px 4px rgba(0, 0, 0, 0.49);
+          -moz-box-shadow: 5px 4px 25px 4px rgba(0, 0, 0, 0.49); }
         body main .testimonios div div div .clientes div div {
           width: 50%;
           height: auto;
@@ -427,6 +429,7 @@ body {
               transform: scale(1.1);
               background-color: #07a0c3; }
     body main .gp-info .gp-info-guias {
+      overflow-x: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -457,7 +460,8 @@ body {
       align-items: center;
       background-image: url(../img/planes.jpg);
       background-position: right;
-      text-align: right; }
+      text-align: right;
+      overflow-x: hidden; }
       body main .gp-info .gp-info-planes .gp-info-text2 {
         display: flex;
         flex-direction: row;
@@ -485,10 +489,10 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      margin-bottom: 40px; }
+      margin-bottom: 28px; }
       body main .gp-productos div h2 {
         font-style: italic;
-        margin: 40px 0px 40px 0px; }
+        margin: 22px 0px 22px 0px; }
       body main .gp-productos div div {
         width: 100%;
         height: auto;
@@ -516,8 +520,8 @@ body {
             flex-wrap: wrap;
             margin: 0 20px 0 20px; }
             body main .gp-productos div div div div div {
-              width: 250px;
-              height: 400px;
+              width: 200px;
+              height: 300px;
               display: flex;
               flex-direction: column;
               justify-content: flex-end;
@@ -558,7 +562,7 @@ body {
                 body main .gp-productos div div div div div div:hover {
                   transform: none; }
                 body main .gp-productos div div div div div div h5 {
-                  font-size: 30px;
+                  font-size: 20px;
                   color: #7af97a;
                   text-transform: uppercase;
                   text-shadow: -2px 0 5px black, 0 2px 5px black, 2px 0 5px black, 0 -2px 5px rgba(0, 0, 0, 0.69); }
@@ -578,8 +582,8 @@ body {
                   cursor: pointer;
                   transition: all ease 0.2s;
                   font-size: 14px;
-                  width: 70px;
-                  height: 50px;
+                  width: 60px;
+                  height: 40px;
                   background-color: #623cea;
                   display: flex;
                   flex-direction: row;
@@ -952,6 +956,7 @@ body {
         width: 40%;
         height: auto; }
       body main .estudios div div {
+        overflow-x: hidden;
         width: 50%;
         height: 100%;
         display: flex;
@@ -963,6 +968,7 @@ body {
         body main .estudios div div ul {
           list-style: disc; }
           body main .estudios div div ul li {
+            overflow-x: hidden;
             font-weight: 500;
             margin: 12px 10px 12px 10px; }
   body main .contacto {
@@ -1545,7 +1551,7 @@ body main {
         border-radius: 10px; } }
   @media screen and (max-width: 865px) {
     body main .gp-info .gp-info-guias {
-      background: linear-gradient(100deg, #161925 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, #161925 100%), url(../img/guias-c.jpg) no-repeat center;
+      background: linear-gradient(100deg, #161925 0%, rgba(22, 25, 37, 0.8) 8%, rgba(22, 25, 37, 0.8) 92%, #161925 100%), url(../img/guias-c.jpg) no-repeat left;
       background-size: cover; }
       body main .gp-info .gp-info-guias h1 {
         background: #161925;
@@ -1615,8 +1621,8 @@ body main {
             body main .gp-productos div div div div div div h5 {
               font-size: 16px; }
             body main .gp-productos div div div div div div button {
-              width: 60px;
-              height: 45px; }
+              width: 50px;
+              height: 35px; }
               body main .gp-productos div div div div div div button img {
                 width: 26px;
                 height: 26px; } }
@@ -1637,8 +1643,8 @@ body main {
         body main .gp-productos div div div div div div h5 {
           font-size: 14px; }
         body main .gp-productos div div div div div div button {
-          width: 50px;
-          height: 40px; }
+          width: 45px;
+          height: 30px; }
           body main .gp-productos div div div div div div button img {
             width: 22px;
             height: 22px; } }

@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Animate On Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
@@ -61,7 +66,7 @@
     <main>
         <section class="historia" id="historia">
             <div class="box-historia">
-                <div class="wrapper-historia">
+                <div class="wrapper-historia animate__animated animate__fadeInLeft">
                     <h1>Sobre mi</h1>
                     <h2>Mi historia</h2>
                     <p>Inicié siendo un flaco, sin entender de entrenamiento o nutrición. Investigando, descubrí la
@@ -77,19 +82,19 @@
         </section>
         <section class="estudios" id="estudios">
             <div class="box-estudios">
-                <h2 class="titulo-estudios-v">Mis estudios</h2>
-                <img src="../img/certificaciones.jpg" alt="Certificaciones del entrenador">
+                <h2 class="titulo-estudios-v" data-aos="fade-up">Mis estudios</h2>
+                <img src="../img/certificaciones.jpg" alt="Certificaciones del entrenador" data-aos="fade-right">
                 <div class="text-estudios">
-                    <h2 class="titulo-estudios">Mis estudios</h2>
+                    <h2 class="titulo-estudios" data-aos="fade-up">Mis estudios</h2>
                     <ul>
-                        <li>Certificación en Entrenamiento Personal Avanzado - Instituto de Ciencias del Deporte
+                        <li data-aos="fade-left" data-aos-delay="200">Certificación en Entrenamiento Personal Avanzado - Instituto de Ciencias del Deporte
                             (ICIDEP)</li>
-                        <li>Diploma en Nutrición Deportiva - Academia Internacional de Nutrición (AIN)</li>
-                        <li>Especialización en Fisiología del Ejercicio - Centro de Investigación Deportiva (CID)</li>
-                        <li>Certificado en Entrenamiento de Fuerza y Acondicionamiento - Asociación Internacional de
+                        <li data-aos="fade-left" data-aos-delay="400">Diploma en Nutrición Deportiva - Academia Internacional de Nutrición (AIN)</li>
+                        <li data-aos="fade-left" data-aos-delay="600">Especialización en Fisiología del Ejercicio - Centro de Investigación Deportiva (CID)</li>
+                        <li data-aos="fade-left" data-aos-delay="800">Certificado en Entrenamiento de Fuerza y Acondicionamiento - Asociación Internacional de
                             Entrenadores (AIE)</li>
-                        <li>Curso de Rehabilitación Funcional - Centro de Rehabilitación Deportiva (CRD)</li>
-                        <li>Certificación en Coaching Deportivo - Instituto de Desarrollo Deportivo (IDD)</li>
+                        <li data-aos="fade-left" data-aos-delay="1000">Curso de Rehabilitación Funcional - Centro de Rehabilitación Deportiva (CRD)</li>
+                        <li data-aos="fade-left" data-aos-delay="1200">Certificación en Coaching Deportivo - Instituto de Desarrollo Deportivo (IDD)</li>
                     </ul>
                 </div>
             </div>
@@ -180,9 +185,15 @@
             </div>
         </div>
     </footer>
+    <!--JS Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <!--JS Animate On Scroll-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
