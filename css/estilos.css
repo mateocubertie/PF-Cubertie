@@ -746,7 +746,8 @@ body {
       border-radius: 10px;
       box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
       -webkit-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
-      -moz-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69); }
+      -moz-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
+      overflow-x: hidden; }
       body main .contenido-asesorias div div {
         width: 85%;
         height: auto;
@@ -798,7 +799,8 @@ body {
         box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
         -webkit-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
         -moz-box-shadow: 9px 10px 13px 0px rgba(0, 0, 0, 0.69);
-        transition: all ease 0.2s; }
+        transition: all ease 0.2s;
+        overflow: hidden; }
         body main .paquetes-asesorias div .tarjeta-asesoria:hover {
           transform: scale(1.1); }
       body main .paquetes-asesorias div div {
@@ -872,10 +874,7 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center; }
-      body main .dudas div h2 {
-        overflow: hidden; }
       body main .dudas div a {
-        overflow: hidden;
         width: 30%;
         height: auto; }
         body main .dudas div a button {
