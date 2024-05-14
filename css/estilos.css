@@ -966,7 +966,7 @@ body {
         body main .estudios div div h2 {
           display: block; }
         body main .estudios div div ul {
-          list-style: disc; }
+          list-style: disc inside; }
           body main .estudios div div ul li {
             overflow-x: hidden;
             font-weight: 500;
