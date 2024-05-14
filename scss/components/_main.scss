@@ -646,11 +646,12 @@ body {
             @include size(100%, 27rem);
             @include flex(row, center, center);
             background-color: $color-primario;
+            overflow-x: hidden;
 
             div {
                 @include size(80%, 100%);
                 @include flex(column, space-evenly, center);
-
+                overflow-x: hidden;
                 a {
                     @include size(30%, auto);
 
