@@ -649,19 +649,19 @@ body {
             @include size(100%, 27rem);
             @include flex(row, center, center);
             background-color: $color-primario;
-            overflow-x: hidden;
-            overflow-y: hidden;
 
             div {
                 @include size(80%, 100%);
                 @include flex(column, space-evenly, center);
-                overflow-x: hidden;
-                overflow-y: hidden;
-
+                h2 {
+                    overflow: hidden;
+                }
                 a {
+                    overflow: hidden;
                     @include size(30%, auto);
 
                     button {
+                        
                         @include button-contenedor(false);
                         @include size(100%, 80px);
                         background-color: $color-botsecundario;
